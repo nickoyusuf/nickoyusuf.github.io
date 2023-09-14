@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>print studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- bootsrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <style type="text/css">
+      #polo {
+        position: absolute;
+        left: 25%;
+        bottom: 1%;
+      }
+    </style> -->
+  </head>
+  <body>
+   <!-- nav bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient shadow fixed-top">
+      <div class="container">
+             <a class="navbar-brand" href="#">
+               <p class="mt-1"><i class="bi bi-printer"></i> Print Studio</p>
+              <!-- <img src="img/logo2.png" alt="Bootstrap" width="50"> -->
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('auth/registration'); ?>">Daftar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('auth/login'); ?>">Login</a>
+                      </li>
+                      
+                </ul>
+            </div>
+      </div>
+</nav>
+<!-- akhir navbar -->
+
+<!-- jumbotron -->
+<div class="jumbotron text-center justify-content-center bg-primary-subtle" style="padding:4%;" >
+   <div class="row mt-5">
+     <div class="col-sm-12 col-md-6 mt-4">
+       <div class="d-md-none shadow">
+         <img src="img/banner2.png" width="100%">
+       </div>
+       <h1 class="d-none d-md-block">Custom Desain</h1>
+       <h5 class="d-none d-md-block">Upload desain suka-suka</h5>
+       <p class= "d-none d-md-block text-danger">Free Download Mock-up</p>
+       <a href="<?= base_url('auth/registration'); ?>" class="btn btn-primary bg-gradient btn-lg mt-2">Daftar Sekarang</a>
+     </div>
+     <div class="d-none d-md-block col-md-6">
+      <img src="img/banner2.png"  width="100%">
+     </div>
+    </div> 
+</div>
+<!-- akhir jumbotron -->
+
+<!-- layanan -->
+
+<section>
+  <div class="container">
+    <!--<div class="row text-center mt-3">
+      <div class="col">
+        <h2 class="display-6">Layanan:</h2> 
+      </div>   
+    </div>-->
+    <div class="row justify-content-center mt-4" style="padding:2%;">
+      <a href="<?= base_url('fitur_desain/page1/page1.html'); ?>" class="d-md-none btn btn-primary btn-lg bg-gradient"><i class="bi bi-file-image text-white"></i> Cari desain keren dan menarik</a>
+      <a href="https://api.whatsapp.com/send?phone=6285892022876&text=saya%20ingin%20konsultasi%20dan%20tanya%20tanya%20mengenai%20desain%20grafis?" class="d-md-none btn btn-primary btn-lg bg-gradient mt-2"><i class="bi bi-whatsapp"></i> Konsultasi dan bantuan desain</a>
+      
+      
+      <div class="d-none d-md-block col-md-4 text-center">
+        <div class="card text-center bg-primary-subtle shadow" style="width: 100%;  height: 90%;">
+          <h6 class="mt-4"><em>Temukan desain menarik untuk di cetak</em></h6>
+          <div class="card-body mb-4">
+           <a href="fitur_desain/page1/page1.html" class="btn btn-primary bg-gradient mt-2"><i class="bi bi-file-image text-white"></i> Cari Desain</a>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-md-block col-md-4 text-center">
+        <div class="card text-center bg-primary-subtle shadow" style="width: 100%;  height: 90%;">
+          <h6 class="mt-4"><em>Konsultasi dan bantuan desain</em></h6>
+          <div class="card-body mb-4">
+           <a href="https://api.whatsapp.com/send?phone=6285892022876&text=saya%20ingin%20konsultasi%20dan%20tanya%20tanya%20mengenai%20desain%20grafis?" class="btn btn-primary bg-gradient mt-2"><i class="bi bi-whatsapp"></i> Desainer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<!-- akhir layanan -->
+
+<!-- mock up -->
+<section>
+  <div class="container mt-4 bg-primary-subtle shadow">
+
+    <div class="row text-center" style="padding:3%;">
+      <h5><em>Buat custom sablon langsung dari hp/pc kamu</em></h5>
+    </div>
+
+    <div class="row justify-content-center"  style=" margin: 2%;">
+
+      <div class="col-6 col-md-4 mb-4">
+        <div class="card text-center" style="width: 100%;  height: 100%;">
+          <span class="d-md-none badge bg-warning mt-2 text-black" style="width: 70%;">Free download</span>
+          <span class="d-none d-md-block badge bg-warning mt-2 text-black" style="width: 50%;">Free download</span>
+          <a href="user_fitur/t-shirt/index.html">
+             <img src="img/kaos.png" class="card-img-top" alt="..." style="padding:10%;">
+           </a>
+          <div class="card-body">
+            <h5 class="card-title">T-shirt</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="user_fitur/t-shirt/index.html" class="btn btn-primary btn-sm">Buat Custom</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 mb-4">
+        <div class="card text-center" style="width: 100%; height: 100%;">
+          <span class="d-md-none badge bg-warning mt-2 text-black" style="width: 70%;">Free download</span>
+          <span class="d-none d-md-block badge bg-warning mt-2 text-black" style="width: 50%;">Free download</span>
+          <a href="user_fitur/polo-shirt/index.html">
+            <img src="img/polo.png" class="card-img-top" alt="..." style="padding:10%;">
+          </a>
+          <div class="card-body" id="polo">
+            <h5 class="card-title">Polo-shirt</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title</p> -->
+            <a href="user_fitur/polo-shirt/index.html" class="btn btn-primary btn-sm">Buat Custom</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 mb-4">
+        <div class="card text-center" style="width: 100%;height: 100%;">
+          <span class="d-md-none badge bg-warning mt-2 text-black" style="width: 70%;">Free download</span>
+          <span class="d-none d-md-block badge bg-warning mt-2 text-black" style="width: 50%;">Free download</span>
+          <a href="user_fitur/ls-shirt/index.html">
+            <img src="img/kaos-ls.png" class="card-img-top" alt="..." style="padding:10%;">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Ls t-shirt</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="user_fitur/ls-shirt/index.html" class="btn btn-primary btn-sm">Buat Custom</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-6 col-md-4 mb-4">
+        <div class="card text-center" style="width: 100%; height: 100%;">
+          <span class="d-md-none badge bg-warning mt-2 text-black" style="width: 70%;">Free download</span>
+          <span class="d-none d-md-block badge bg-warning mt-2 text-black" style="width: 50%;">Free download</span>
+          <a href="user_fitur/long-sleeve/index.html">
+            <img src="img/long-sleeve.png" class="card-img-top" alt="..." style="padding:10%;">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">long-sleeve</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="user_fitur/long-sleeve/index.html" class="btn btn-primary btn-sm">Buat Custom</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-md-4 mb-4">
+        <div class="card text-center" style="width: 100%; height: 100%;">
+          <span class="d-md-none badge bg-warning mt-2 text-black" style="width: 70%;">Free download</span>
+          <span class="d-none d-md-block badge bg-warning mt-2 text-black" style="width: 50%;">Free download</span>
+          <a href="user_fitur/hoody/index.html">
+            <img src="img/hoody mockup.png" class="card-img-top" alt="..." style="padding:10%;">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Hoodie</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="user_fitur/hoody/index.html" class="btn btn-primary btn-sm">Buat Custom</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-6 col-md-4 mb-4">
+        <div class="card text-center" style="width: 100%; height: 100%;">
+          <span class="d-md-none badge bg-warning mt-2 text-black" style="width: 70%;">Free download</span>
+          <span class="d-none d-md-block badge bg-warning mt-2 text-black" style="width: 50%;">Free download</span>
+          <a href="user_fitur/crewneck/index.html">
+            <img src="img/crewneck.png" class="card-img-top" alt="..." style="padding:10%;">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">crew neck</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <a href="user_fitur/crewneck/index.html" class="btn btn-primary btn-sm">Buat Custom</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 mb-4">
+        <div class="card text-center" style="width: 100%; height: 100%;">
+          <span class="d-md-none badge bg-warning mt-2 text-black" style="width: 70%;">Free download</span>
+          <span class="d-none d-md-block badge bg-warning mt-2 text-black" style="width: 50%;">Free download</span>
+          <a href="user_fitur/topi/index.html">
+            <img src="img/topi-mockup.png" class="card-img-top mt-5" alt="..." style="padding:10%;">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Topi</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title</p> -->
+            <a href="user_fitur/topi/index.html" class="btn btn-primary btn-sm">Buat Custom</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 mb-4">
+        <div class="card text-center" style="width: 100%; height: 100%;">
+          <span class="d-md-none badge bg-warning mt-2 text-black" style="width: 70%;">Free download</span>
+          <span class="d-none d-md-block badge bg-warning mt-2 text-black" style="width: 50%;">Free download</span>
+          <a href="user_fitur/tote-bag/index.html">
+            <img src="img/todbag4.png" class="card-img-top" alt="..." style="padding:15%;">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Tote bag</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title</p> -->
+            <a href="user_fitur/tote-bag/index.html" class="btn btn-primary btn-sm">Buat Custom</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- akhir mock up -->
+
+<!-- produk digital -->
+<section>
+  <div class="container mt-5 bg-primary-subtle shadow">
+
+    <div class="row text-center" style="padding:3%;">
+      <h5><em>Temukan desain keren dan menarik untuk di sablon</em></h5>
+    </div>
+
+    <div class="row justify-content-center"  style=" margin: 2%;">
+
+       <div class="col-6 col-md-3 mb-4">
+        <div class="card text-center" style="width: 100%;  height: 100%;">
+          <!-- <span class="d-md-none badge bg-warning mt-2 text-black" style="width: 70%;">exsklusif</span>
+          <span class="d-none d-md-block badge bg-warning mt-2 text-black" style="width: 50%;">exsklusif</span> -->
+          <a href="main_desain/desain1.html">
+             <img src="fitur_desain/desain/Bike 4.png" class="card-img-top" alt="..." style="padding:5%;">
+           </a>
+          <div class="card-body">
+            <h5 class="card-title">Bike 4</h5>
+            <p class="card-text">Rp.5.000</p>
+            <a href="main_desain/desain1.html" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i> Lihat</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card text-center" style="width: 100%;  height: 100%;">
+          <!-- <span class="d-md-none badge bg-warning mt-2 text-black" style="width: 70%;">exsklusif</span>
+          <span class="d-none d-md-block badge bg-warning mt-2 text-black" style="width: 50%;">exsklusif</span> -->
+          <a href="main_desain/desain2.html">
+             <img src="fitur_desain/desain/mancing 11.png" class="card-img-top" alt="..." style="padding:5%;">
+           </a>
+          <div class="card-body">
+            <h5 class="card-title">mancing 11</h5>
+            <p class="card-text">Rp.5.000</p>
+            <a href="main_desain/desain2.html" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i> Lihat</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card text-center" style="width: 100%;  height: 100%;">
+          <!-- <span class="d-md-none badge bg-warning mt-2 text-black" style="width: 70%;">exsklusif</span>
+          <span class="d-none d-md-block badge bg-warning mt-2 text-black" style="width: 50%;">exsklusif</span> -->
+          <a href="main_desain/desain3.html">
+             <img src="fitur_desain/desain/03.png" class="card-img-top" alt="..." style="padding:5%;">
+           </a>
+          <div class="card-body">
+            <h5 class="card-title">Desain 3</h5>
+            <p class="card-text">Rp.5.000</p>
+            <a href="main_desain/desain3.html" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i> Lihat</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card text-center" style="width: 100%;  height: 100%;">
+          <!-- <span class="d-md-none badge bg-warning mt-2 text-black" style="width: 70%;">exsklusif</span>
+          <span class="d-none d-md-block badge bg-warning mt-2 text-black" style="width: 50%;">exsklusif</span> -->
+          <a href="main_desain/desain4.html">
+             <img src="fitur_desain/desain/04.png" class="card-img-top" alt="..." style="padding:5%;">
+           </a>
+          <div class="card-body">
+            <h5 class="card-title">Desain 4</h5>
+            <p class="card-text">Rp.5.000</p>
+            <a href="main_desain/desain4.html" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i> Lihat</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card text-center" style="width: 100%;  height: 100%;">
+          <!-- <span class="d-md-none badge bg-warning mt-2 text-black" style="width: 70%;">exsklusif</span>
+          <span class="d-none d-md-block badge bg-warning mt-2 text-black" style="width: 50%;">exsklusif</span> -->
+          <a href="main_desain/desain5.html">
+             <img src="fitur_desain/desain/05.png" class="card-img-top" alt="..." style="padding:5%;">
+           </a>
+          <div class="card-body">
+            <h5 class="card-title">Desain 5</h5>
+            <p class="card-text">Rp.5.000</p>
+            <a href="fmain_desain/desain5.html" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i> Lihat</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card text-center" style="width: 100%;  height: 100%;">
+          <!-- <span class="d-md-none badge bg-warning mt-2 text-black" style="width: 70%;">exsklusif</span>
+          <span class="d-none d-md-block badge bg-warning mt-2 text-black" style="width: 50%;">exsklusif</span> -->
+          <a href="main_desain/desain6.html">
+             <img src="fitur_desain/desain/06.png" class="card-img-top" alt="..." style="padding:5%;">
+           </a>
+          <div class="card-body">
+            <h5 class="card-title">Desain 6</h5>
+            <p class="card-text">Rp.5.000</p>
+            <a href="main_desain/desain6.html" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i> Lihat</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card text-center" style="width: 100%;  height: 100%;">
+          <!-- <span class="d-md-none badge bg-warning mt-2 text-black" style="width: 70%;">exsklusif</span>
+          <span class="d-none d-md-block badge bg-warning mt-2 text-black" style="width: 50%;">exsklusif</span> -->
+          <a href="main_desain/desain7.html">
+             <img src="fitur_desain/desain/07.png" class="card-img-top" alt="..." style="padding:5%;">
+           </a>
+          <div class="card-body">
+            <h5 class="card-title">Desain 7</h5>
+            <p class="card-text">Rp.5.000</p>
+            <a href="main_desain/desain7.html" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i> Lihat</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card text-center" style="width: 100%;  height: 100%;">
+          <!-- <span class="d-md-none badge bg-warning mt-2 text-black" style="width: 70%;">exsklusif</span>
+          <span class="d-none d-md-block badge bg-warning mt-2 text-black" style="width: 50%;">exsklusif</span> -->
+          <a href="main_desain/desain8.html">
+             <img src="fitur_desain/desain/08.png" class="card-img-top" alt="..." style="padding:5%;">
+           </a>
+          <div class="card-body">
+            <h5 class="card-title">Desain 8</h5>
+            <p class="card-text">Rp.5.000</p>
+            <a href="main_desain/desain8.html" class="btn btn-primary"><i class="bi bi-eye"></i> Lihat</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+       <a href="fitur_desain/page1/page1.html" class="btn btn-primary bg-gradient mb-4">Lihat desain Lainnya</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- akhir produk digital -->
+
+<!-- footer -->
+<footer class="bg-primary text-white text-center mt-4">
+  <i class="bi bi-globe"> printstudio.co.id</i>
+  <!-- <p>Printstudio.co.id</p> -->
+</footer>
+<!-- akhir footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

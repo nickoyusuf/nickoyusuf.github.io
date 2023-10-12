@@ -1,77 +1,81 @@
+document.getElementById("back").onclick = function(){
+	document.getElementById("kaos").src = "img/back.png";
+}
+
 document.getElementById("hitam").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/hitam.png";
+	document.getElementById("svg").style.fill = "black";
 }
 document.getElementById("putih").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/putih.png";  
+	document.getElementById("svg").style.fill = "white";
 }
 document.getElementById("abumisty").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/abumisty.png";   
+	document.getElementById("svg").style.fill = "#9b9b9b";
 }
 document.getElementById("abutua").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/abutua.png";
+	document.getElementById("svg").style.fill = "#545454";
 }
 document.getElementById("abumuda").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/abumuda.png";
+	document.getElementById("svg").style.fill = " #b9b9b9";
 }
 document.getElementById("merah").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/merah.png";
+	document.getElementById("svg").style.fill = "red";
 }
 document.getElementById("maroon").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/maroon.png";
+	document.getElementById("svg").style.fill = "#840106";
 }
 document.getElementById("teracota").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/teracota.png";
+	document.getElementById("svg").style.fill = "#af3b14";
 }
 document.getElementById("pink").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/pink.png";
+	document.getElementById("svg").style.fill = "#fcd5e7";
 }
 document.getElementById("fanta").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/fanta.png";
+	document.getElementById("svg").style.fill = "#cc1f71";
 }
 document.getElementById("navy").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/navy.png";
+	document.getElementById("svg").style.fill = "#21325e";
 }
 document.getElementById("biruturkis").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/biruturkis.png";
+	document.getElementById("svg").style.fill = "#189ce6";
 }
 document.getElementById("birubenhur").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/birubenhur.png";
+	document.getElementById("svg").style.fill = "#082988";
 }
 document.getElementById("birumuda").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/birumuda.png";
+	document.getElementById("svg").style.fill = "#6cc9f4";
 }
 document.getElementById("hijauarmy").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/hijauarmy.png";
+	document.getElementById("svg").style.fill = "#003a07";
 }
 document.getElementById("hijaubotol").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/hijaubotol.png";
+	document.getElementById("svg").style.fill = "#0e6b50";
 }
 document.getElementById("hijaustabilo").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/hijaustabilo.png";
+	document.getElementById("svg").style.fill = "#9cf007";
 }
 document.getElementById("hijautosca").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/hijautosca.png";
+	document.getElementById("svg").style.fill = "#157291";
 }
 document.getElementById("hijaufuji").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/hijaufuji.png";
+	document.getElementById("svg").style.fill = "#0b9c41";
 }
 document.getElementById("mustard").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/mustard.png";
+	document.getElementById("svg").style.fill = "#f1ab17";
 }
 document.getElementById("kuningkenari").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/kuningkenari.png";
+	document.getElementById("svg").style.fill = "#fee026";
 }
 document.getElementById("oren").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/oren.png";
+	document.getElementById("svg").style.fill = "#f35b10";
 }
 document.getElementById("ungu").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/ungu.png";
+	document.getElementById("svg").style.fill = "#5f3269";
 }
 document.getElementById("cream").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/cream.png";
+	document.getElementById("svg").style.fill = "#d2bf94";
 }
 document.getElementById("coklat").onclick = function(){
-	document.getElementById("kaos").src = "kaospendekdepan/coklat.png";
+	document.getElementById("svg").style.fill = "#472114";
 }
 document.getElementById("bghitam").onclick = function(){
     document.querySelector(".contenerkaos").style.backgroundColor = "black";

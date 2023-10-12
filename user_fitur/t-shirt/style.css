@@ -893,6 +893,16 @@ body {
   top: 3%;
   right: 13%;
 }
+#svg {
+  width: 73%;
+  height: 95%;
+  position: absolute;
+  top: 3%;
+  right: 13%;
+  z-index: 1;
+  fill: red;
+  mix-blend-mode: multiply;
+}
 
 #contenerukuran {
   position: absolute;
@@ -2009,6 +2019,15 @@ body {
   position: absolute;
   top: 3%;
   right: 5%;
+  
+}
+#svg {
+  width: 90%;
+  height: 95%;
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  mix-blend-mode: multiply;
 }
 
 #contenerukuran {
@@ -2891,6 +2910,13 @@ body {
   top: 3%;
   right: 8%;
   }
+  #svg {
+    width: 83%;
+    position: absolute;
+    top: 3%;
+    right: 8%;
+    mix-blend-mode: multiply;
+    }
   #order {
   position: absolute;
   top: 1%;

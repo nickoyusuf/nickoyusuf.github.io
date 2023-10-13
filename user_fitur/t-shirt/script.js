@@ -809,17 +809,17 @@ draggableElem.addEventListener(events[deviceType].up, (e) => {
 
 const ukuran = document.getElementById('input-size');
 ukuran.addEventListener('input',function() {
-	const y = ukuran5.value;
-	const z = ukuran5.value;
-	draggableElem5.style.width = + y +'px';
-	draggableElem5.style.height = + z +'px';
+	const y = ukuran.value;
+	const z = ukuran.value;
+	draggableElem.style.width = + y +'px';
+	draggableElem.style.height = + z +'px';
    // console.log(ukuran.value);
 });
 
 const putar = document.getElementById('input-rotate');
 putar.addEventListener('input',function() {
-	const x = putar5.value;
-	draggableElem5.style.transform = 'rotate('+ x +'deg)';
+	const x = putar.value;
+	draggableElem.style.transform = 'rotate('+ x +'deg)';
    // console.log(putar.value);
 });
 const conukuran = document.querySelector('#contenerukuran');
@@ -834,17 +834,17 @@ draggableElem.onclick =() => {
 
 const ukuran2 = document.getElementById('input-size2');
 ukuran2.addEventListener('input',function() {
-	const y = ukuran5.value;
-	const z = ukuran5.value;
-	draggableElem5.style.width = + y +'px';
-	draggableElem5.style.height = + z +'px';
+	const y = ukuran2.value;
+	const z = ukuran2.value;
+	draggableElem2.style.width = + y +'px';
+	draggableElem2.style.height = + z +'px';
    // console.log(ukuran.value);
 });
 
 const putar2 = document.getElementById('input-rotate2');
 putar2.addEventListener('input',function() {
-	const x = putar5.value;
-	draggableElem5.style.transform = 'rotate('+ x +'deg)';
+	const x = putar2.value;
+	draggableElem2.style.transform = 'rotate('+ x +'deg)';
    // console.log(putar.value);
 });
 
@@ -860,17 +860,17 @@ draggableElem2.onclick =() => {
 
 const ukuran3 = document.getElementById('input-size3');
 ukuran3.addEventListener('input',function() {
-	const y = ukuran5.value;
-	const z = ukuran5.value;
-	draggableElem5.style.width = + y +'px';
-	draggableElem5.style.height = + z +'px';
+	const y = ukuran3.value;
+	const z = ukuran3.value;
+	draggableElem3.style.width = + y +'px';
+	draggableElem3.style.height = + z +'px';
    // console.log(ukuran.value);
 });
 
 const putar3 = document.getElementById('input-rotate3');
 putar3.addEventListener('input',function() {
-	const x = putar5.value;
-	draggableElem5.style.transform = 'rotate('+ x +'deg)';
+	const x = putar3.value;
+	draggableElem3.style.transform = 'rotate('+ x +'deg)';
    // console.log(putar.value);
 });
 
@@ -886,17 +886,17 @@ draggableElem3.onclick =() => {
 
 const ukuran4 = document.getElementById('input-size4');
 ukuran4.addEventListener('input',function() {
-	const y = ukuran5.value;
-	const z = ukuran5.value;
-	draggableElem5.style.width = + y +'px';
-	draggableElem5.style.height = + z +'px';
+	const y = ukuran4.value;
+	const z = ukuran4.value;
+	draggableElem4.style.width = + y +'px';
+	draggableElem4.style.height = + z +'px';
    // console.log(ukuran.value);
 });
 
 const putar4 = document.getElementById('input-rotate4');
 putar4.addEventListener('input',function() {
-	const x = putar5.value;
-	draggableElem5.style.transform = 'rotate('+ x +'deg)';
+	const x = putar4.value;
+	draggableElem4.style.transform = 'rotate('+ x +'deg)';
    // console.log(putar.value);
 });
 

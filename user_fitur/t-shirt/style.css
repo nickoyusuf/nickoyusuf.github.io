@@ -2636,9 +2636,9 @@ body {
 .wraper_editor #warnakaos {
   position: absolute;
   left: 2.5%;
-  top: 6%;
+  top: 15%;
   width: 95%;
-  height: 70%;
+  height: 50%;
 }
 #warnakaos .text {
     font-size: 7px;
@@ -2648,16 +2648,19 @@ body {
   position: absolute;
   top: 16%;
   left: 6%;
+  display: none;
 }
 #texthitam {
   position: absolute;
   top: 36%;
   left: 6%;
+  display: none;
 }
 #textabumisty {
   position: absolute;
   top: 56%;
   left: 3.5%;
+  display: none;
 }
 #textabutua {
   position: absolute;
@@ -2673,16 +2676,19 @@ body {
   position: absolute;
   top: 16%;
   left: 25%;
+  display: none;
 }
 #textmaroon {
   position: absolute;
   top: 36%;
   left: 24%;
+  display: none;
 }
 #textteracota {
   position: absolute;
   top: 56%;
   left: 23%;
+  display: none;
 }
 #textpink {
   position: absolute;
@@ -2698,16 +2704,19 @@ body {
   position: absolute;
   top: 16%;
   left: 46%;
+  display: none;
 }
 #textbiruturkis {
   position: absolute;
   top: 36%;
   left: 42%;
+  display: none;
 }
 #textbirubenhur {
   position: absolute;
   top: 56%;
   left: 41%;
+  display: none;
 }
 #textbirumuda {
   position: absolute;
@@ -2723,16 +2732,19 @@ body {
   position: absolute;
   top: 16%;
   left: 62%;
+  display: none;
 }
 #texthijaustabilo {
   position: absolute;
   top: 36%;
   left: 61%;
+  display: none;
 }
 #texthijautosca {
   position: absolute;
   top: 56%;
   left: 62%;
+  display: none;
 }
 #texthijaufuji {
   position: absolute;
@@ -2748,16 +2760,19 @@ body {
   position: absolute;
   top: 16%;
   left: 82%;
+  display: none;
 }
 #textoren {
   position: absolute;
   top: 36%;
   left: 88%;
+  display: none;
 }
 #textungu {
   position: absolute;
   top: 56%;
   left: 88%;
+  display: none;
 }
 #textcream {
   position: absolute;
@@ -2776,6 +2791,7 @@ body {
   position: absolute;
   left: 3%;
   top: -2%;
+  display: none;
 }
 #warnakaos #hitam {
   width: calc(50px - 20px);
@@ -2784,6 +2800,7 @@ body {
   position: absolute;
   left: 3%;
   top: 18%;
+  display: none;
 }
 #warnakaos #abumisty {
   width: calc(50px - 20px);
@@ -2792,22 +2809,23 @@ body {
   position: absolute;
   left: 3%;
   top: 38%;
+  display: none;
 }
 #warnakaos #abutua {
-  width: calc(50px - 20px);
-  height: calc(50px - 20px);
+  width: calc(50px - 5px);
+  height: calc(50px - 5px);
   border-radius: 50%;
   position: absolute;
   left: 3%;
-  top: 58%;
+  top: 40%;
 }
 #warnakaos #abumuda {
-  width: calc(50px - 20px);
-  height: calc(50px - 20px);
+  width: calc(50px - 5px);
+  height: calc(50px - 5px);
   border-radius: 50%;
   position: absolute;
   left: 3%;
-  top: 77.5%;
+  top: 70%;
 }
 #warnakaos #merah {
   width: calc(50px - 20px);
@@ -2816,6 +2834,7 @@ body {
   position: absolute;
   left: 22%;
   top: -2%;
+  display: none;
 }
 #warnakaos #maroon {
   width: calc(50px - 20px);
@@ -2824,6 +2843,7 @@ body {
   position: absolute;
   left: 22%;
   top: 18%;
+  display: none;
 }
 #warnakaos #teracota {
   width: calc(50px - 20px);
@@ -2832,22 +2852,23 @@ body {
   position: absolute;
   left: 22%;
   top: 38%;
+  display: none;
 }
 #warnakaos #pink {
-  width: calc(50px - 20px);
-  height: calc(50px - 20px);
+  width: calc(50px - 5px);
+  height: calc(50px - 5px);
   border-radius: 50%;
   position: absolute;
   left: 22%;
-  top: 58%;
+  top: 40%;
 }
 #warnakaos #fanta {
-  width: calc(50px - 20px);
-  height: calc(50px - 20px);
+  width: calc(50px - 5px);
+  height: calc(50px - 5px);
   border-radius: 50%;
   position: absolute;
   left: 22%;
-  top: 77.5%;
+  top: 70%;
 }
 #warnakaos #navy {
   width: calc(50px - 20px);
@@ -2856,6 +2877,7 @@ body {
   position: absolute;
   left: 42%;
   top: -2%;
+  display: none;
 }
 #warnakaos #biruturkis {
   width: calc(50px - 20px);
@@ -2864,6 +2886,7 @@ body {
   position: absolute;
   left: 42%;
   top:18%;
+  display: none;
 }
 #warnakaos #birubenhur {
   width: calc(50px - 20px);
@@ -2872,82 +2895,93 @@ body {
   position: absolute;
   left: 42%;
   top: 38%;
+  display: none;
 }
 #warnakaos #birumuda {
-  width: calc(50px - 20px);
-  height: calc(50px - 20px);
+  width: calc(50px - 5px);
+  height: calc(50px - 5px);
   border-radius: 50%;
   position: absolute;
   left: 42%;
-  top: 58%;
+  top: 40%;
 }
 #warnakaos #hijauarmy {
-  width: calc(50px - 20px);
-  height: calc(50px - 20px);
+  width: calc(50px - 5px);
+  height: calc(50px - 5px);
   border-radius: 50%;
   position: absolute;
   left: 42%;
-  top: 77.5%;
+  top: 70%;
 }
 #warnakaos #hijaubotol {
   width: calc(50px - 20px);
   height: calc(50px - 20px);
   border-radius: 50%;
   top: -2%;
+  display: none;
 }
 #warnakaos #hijaustabilo {
   width: calc(50px - 20px);
   height: calc(50px - 20px);
   border-radius: 50%;
   top: 18%;
+  display: none;
 }
 #warnakaos #hijautosca {
   width: calc(50px - 20px);
   height: calc(50px - 20px);
   border-radius: 50%;
   top: 38%;
+  display: none;
 }
 #warnakaos #hijaufuji {
-  width: calc(50px - 20px);
-  height: calc(50px - 20px);
+  width: calc(50px - 5px);
+  height: calc(50px - 5px);
   border-radius: 50%;
-  top: 58%;
+  top: 40%;
+  right: 20%;
 }
 #warnakaos #mustard {
-  width: calc(50px - 20px);
-  height: calc(50px - 20px);
+  width: calc(50px - 5px);
+  height: calc(50px - 5px);
   border-radius: 50%;
-  top: 77.5%;
+  top: 70%;
+  right: 20%;
 }
 #warnakaos #kuningkenari {
   width: calc(50px - 20px);
   height: calc(50px - 20px);
   border-radius: 50%;
   top: -2%;
+  display: none;
 }
 #warnakaos #oren {
   width: calc(50px - 20px);
   height: calc(50px - 20px);
   border-radius: 50%;
   top: 18%;
+  display: none;
 }
 #warnakaos #ungu {
   width: calc(50px - 20px);
   height: calc(50px - 20px);
   border-radius: 50%;
   top: 38%;
+  display: none;
 }
 #warnakaos #cream {
-  width: calc(50px - 20px);
-  height: calc(50px - 20px);
+  width: calc(50px - 5px);
+  height: calc(50px - 5px);
   border-radius: 50%;
-  top: 58%;
+  top: 40%;
+  right: 1%;
 }
 #warnakaos #coklat {
-  width: calc(50px - 20px);
-  height: calc(50px - 20px);
+  width: calc(50px - 5px);
+  height: calc(50px - 5px);
   border-radius: 50%;
-  top: 77.5%;
+  top: 70%;
+  right: 1%;
 }
 
 

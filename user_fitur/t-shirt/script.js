@@ -1,3 +1,9 @@
+let color = document.querySelector('#svg');
+let colorinput = document.querySelector('#custom-color')
+colorinput.addEventListener('input',()=> {
+	color.style.fill = colorinput.value;
+});
+
 document.getElementById("back").onclick = function(){
 	document.getElementById("kaos").src = "img/back.png";
 }
@@ -14,9 +20,9 @@ document.getElementById("abumisty").onclick = function(){
 document.getElementById("abutua").onclick = function(){
 	document.getElementById("svg").style.fill = "#545454";
 }
-document.getElementById("abumuda").onclick = function(){
-	document.getElementById("svg").style.fill = " #b9b9b9";
-}
+// document.getElementById("abumuda").onclick = function(){
+// 	document.getElementById("svg").style.fill = " #b9b9b9";
+// }
 document.getElementById("merah").onclick = function(){
 	document.getElementById("svg").style.fill = "red";
 }
@@ -254,9 +260,6 @@ dragArea.onclick =() => {
     draggableElem5.style.border = 'none';
 	conukuran5.style.display = 'none';
 	conputar5.style.display = 'none';
-
-	conukuran.style = 'display';
-	conputar.style = 'display';
 }
 
 dragArea2.onclick =() => { 
@@ -275,9 +278,6 @@ dragArea2.onclick =() => {
     draggableElem.style.border = 'none';
 	conukuran.style.display = 'none';
 	conputar.style.display = 'none';
-
-	conukuran2.style = 'display';
-	conputar2.style = 'display';
 }
 
 dragArea3.onclick =() => { 
@@ -296,9 +296,6 @@ dragArea3.onclick =() => {
     draggableElem.style.border = 'none';
 	conukuran.style.display = 'none';
 	conputar.style.display = 'none';
-
-	conukuran3.style = 'display';
-	conputar3.style = 'display';
 }
 
 dragArea4.onclick =() => { 
@@ -317,9 +314,6 @@ dragArea4.onclick =() => {
     draggableElem.style.border = 'none';
 	conukuran.style.display = 'none';
 	conputar.style.display = 'none';
-
-	conukuran4.style = 'display';
-	conputar4.style = 'display';
 }
 
 dragArea5.onclick =() => { 
@@ -338,9 +332,6 @@ dragArea5.onclick =() => {
     draggableElem.style.border = 'none';
 	conukuran.style.display = 'none';
 	conputar.style.display = 'none';
-
-	conukuran5.style = 'display';
-	conputar5.style = 'display';
 }
 
 inputbg.addEventListener('change',function() {
@@ -837,8 +828,8 @@ putar.addEventListener('input',function() {
 	draggableElem.style.transform = 'rotate('+ x +'deg)';
    // console.log(putar.value);
 });
-const conukuran = document.querySelector('#input-size');
-const conputar = document.querySelector('#input-rotate');
+const conukuran = document.querySelector('#contenerukuran');
+const conputar = document.querySelector('#contenerputar');
 
 draggableElem.onclick =() => {
 	
@@ -863,8 +854,8 @@ putar2.addEventListener('input',function() {
    // console.log(putar.value);
 });
 
-const conukuran2 = document.querySelector('#input-size2');
-const conputar2 = document.querySelector('#input-rotate2');
+const conukuran2 = document.querySelector('#contenerukuran2');
+const conputar2 = document.querySelector('#contenerputar2');
 
 draggableElem2.onclick =() => {
 	
@@ -889,8 +880,8 @@ putar3.addEventListener('input',function() {
    // console.log(putar.value);
 });
 
-const conukuran3 = document.querySelector('#input-size3');
-const conputar3 = document.querySelector('#input-rotate3');
+const conukuran3 = document.querySelector('#contenerukuran3');
+const conputar3 = document.querySelector('#contenerputar3');
 
 draggableElem3.onclick =() => {
 	
@@ -915,8 +906,8 @@ putar4.addEventListener('input',function() {
    // console.log(putar.value);
 });
 
-const conukuran4 = document.querySelector('#input-size4');
-const conputar4 = document.querySelector('#input-rotate4');
+const conukuran4 = document.querySelector('#contenerukuran4');
+const conputar4 = document.querySelector('#contenerputar4');
 draggableElem4.onclick =() => {
 	
 	draggableElem4.style.border = 'dashed 2px yellow';
@@ -940,8 +931,8 @@ putar5.addEventListener('input',function() {
    // console.log(putar.value);
 });
 
-const conukuran5 = document.querySelector('#input-size5');
-const conputar5 = document.querySelector('#input-rotate5');
+const conukuran5 = document.querySelector('#contenerukuran5');
+const conputar5 = document.querySelector('#contenerputar5');
 
 draggableElem5.onclick =() => {
 	

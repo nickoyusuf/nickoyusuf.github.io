@@ -254,6 +254,9 @@ dragArea.onclick =() => {
     draggableElem5.style.border = 'none';
 	conukuran5.style.display = 'none';
 	conputar5.style.display = 'none';
+
+	conukuran.style = 'display';
+	conputar.style = 'display';
 }
 
 dragArea2.onclick =() => { 
@@ -272,6 +275,9 @@ dragArea2.onclick =() => {
     draggableElem.style.border = 'none';
 	conukuran.style.display = 'none';
 	conputar.style.display = 'none';
+
+	conukuran2.style = 'display';
+	conputar2.style = 'display';
 }
 
 dragArea3.onclick =() => { 
@@ -290,6 +296,9 @@ dragArea3.onclick =() => {
     draggableElem.style.border = 'none';
 	conukuran.style.display = 'none';
 	conputar.style.display = 'none';
+
+	conukuran3.style = 'display';
+	conputar3.style = 'display';
 }
 
 dragArea4.onclick =() => { 
@@ -308,6 +317,9 @@ dragArea4.onclick =() => {
     draggableElem.style.border = 'none';
 	conukuran.style.display = 'none';
 	conputar.style.display = 'none';
+
+	conukuran4.style = 'display';
+	conputar4.style = 'display';
 }
 
 dragArea5.onclick =() => { 
@@ -326,6 +338,9 @@ dragArea5.onclick =() => {
     draggableElem.style.border = 'none';
 	conukuran.style.display = 'none';
 	conputar.style.display = 'none';
+
+	conukuran5.style = 'display';
+	conputar5.style = 'display';
 }
 
 inputbg.addEventListener('change',function() {

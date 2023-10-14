@@ -822,8 +822,8 @@ putar.addEventListener('input',function() {
 	draggableElem.style.transform = 'rotate('+ x +'deg)';
    // console.log(putar.value);
 });
-const conukuran = document.querySelector('#contenerukuran');
-const conputar = document.querySelector('#contenerputar');
+const conukuran = document.querySelector('#input-size');
+const conputar = document.querySelector('#input-rotate');
 
 draggableElem.onclick =() => {
 	
@@ -848,8 +848,8 @@ putar2.addEventListener('input',function() {
    // console.log(putar.value);
 });
 
-const conukuran2 = document.querySelector('#contenerukuran2');
-const conputar2 = document.querySelector('#contenerputar2');
+const conukuran2 = document.querySelector('#input-size2');
+const conputar2 = document.querySelector('#input-rotate2');
 
 draggableElem2.onclick =() => {
 	
@@ -874,8 +874,8 @@ putar3.addEventListener('input',function() {
    // console.log(putar.value);
 });
 
-const conukuran3 = document.querySelector('#contenerukuran3');
-const conputar3 = document.querySelector('#contenerputar3');
+const conukuran3 = document.querySelector('#input-size3');
+const conputar3 = document.querySelector('#input-rotate3');
 
 draggableElem3.onclick =() => {
 	
@@ -900,8 +900,8 @@ putar4.addEventListener('input',function() {
    // console.log(putar.value);
 });
 
-const conukuran4 = document.querySelector('#contenerukuran4');
-const conputar4 = document.querySelector('#contenerputar4');
+const conukuran4 = document.querySelector('#input-size4');
+const conputar4 = document.querySelector('#input-rotate4');
 draggableElem4.onclick =() => {
 	
 	draggableElem4.style.border = 'dashed 2px yellow';
@@ -925,8 +925,8 @@ putar5.addEventListener('input',function() {
    // console.log(putar.value);
 });
 
-const conukuran5 = document.querySelector('#contenerukuran5');
-const conputar5 = document.querySelector('#contenerputar5');
+const conukuran5 = document.querySelector('#input-size5');
+const conputar5 = document.querySelector('#input-rotate5');
 
 draggableElem5.onclick =() => {
 	

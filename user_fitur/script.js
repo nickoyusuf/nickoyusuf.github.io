@@ -7,12 +7,12 @@ colorinput.addEventListener('input',()=> {
 let back = document.getElementById('back');
 let front = document.getElementById('front');
 back.addEventListener('click',()=> {
-	document.getElementById("kaos").src = "img/back.png";
+	document.getElementById("kaos").src = "back.png";
 	back.style.display = 'none';
 	front.style = 'display';
 });
 front.addEventListener('click',()=> {
-	document.getElementById("kaos").src = "img/front.png";
+	document.getElementById("kaos").src = "front.png";
 	front.style.display = 'none';
 	back.style = 'display';
 });

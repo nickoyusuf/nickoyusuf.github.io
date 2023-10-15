@@ -351,7 +351,7 @@ body {
   border-radius: 50%;
   margin: 5px;
   cursor: pointer;
- border: 1px solid #ccc;
+ /* border: 1px solid #ccc; */
 }
 #merah {
   position: absolute;
@@ -767,7 +767,7 @@ body {
 #riset {
   position: absolute;
   top: 3%;
-  right: 5%;
+  left: 15%;
   width: 20%;
   height: 5%;
   border: 1px solid #ccc;
@@ -806,8 +806,8 @@ body {
 }
 #back {
   position: absolute;
-  bottom: 2%;
-  right: 40%;
+  top: 3%;
+  left:65%;
   width: 20%;
   height: 5%;
   border: 1px solid #ccc;
@@ -1987,9 +1987,9 @@ body {
 }
 #riset {
   position: absolute;
-  top: 1%;
-  right: 5%;
-  width: 40%;
+  top: 7%;
+  left: 5%;
+  width: 30%;
   height: 5%;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -2029,21 +2029,20 @@ body {
 }
 #back {
   position: absolute;
-  bottom: 10%;
-  right: 5%;
-  width: 90%;
+  top: 7%;
+  left:70%;
+  width: 30%;
   height: 5%;
   border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
   background: #082988;
-/*  display:none; */
 }
 #backtext {
   position: absolute;
   top: 18%;
-  left: 40%;
+  left: 20%;
   color: white;
 }
 #kembali {
@@ -2398,7 +2397,7 @@ body {
 }
 .slider .filter-size{
   position: absolute;
-  bottom: 5%;
+  bottom: 12%;
   left: 4%;
    display: flex;
    color:black;
@@ -2407,7 +2406,7 @@ body {
  }
  .slider .filter-rotate{
    position: absolute;
-   bottom: 1%;
+   bottom: 3%;
    left: 5%;
    display: flex;
    color:black;
@@ -2416,81 +2415,81 @@ body {
   }
   .slider #input-size{
     position: absolute;
-    bottom: 6%;
-    left: 20%;
-    width: 70%;
+    bottom: 12%;
+    left: 30%;
+    width: 65%;
     height: 5px;
     accent-color: #f0ec14;
   }
   .slider #input-rotate{
     position: absolute;
-    bottom: 1.5%;
-    left: 20%;
-    width: 70%;
+    bottom: 3%;
+    left: 30%;
+    width: 65%;
     height: 5px;
     accent-color: #dfca10;
   }
   .slider #input-size2{
     position: absolute;
-    bottom: 6%;
-    left: 20%;
-    width: 70%;
+    bottom: 12%;
+    left: 30%;
+    width: 65%;
     height: 5px;
     accent-color: #f0ec14;
   }
   .slider #input-rotate2{
     position: absolute;
-    bottom: 1.5%;
-    left: 20%;
-    width: 70%;
+    bottom: 3%;
+    left: 30%;
+    width: 65%;
     height: 5px;
     accent-color: #dfca10;
   }
   .slider #input-size3{
     position: absolute;
-    bottom: 6%;
-    left: 20%;
-    width: 70%;
+    bottom: 12%;
+    left: 30%;
+    width: 65%;
     height: 5px;
     accent-color: #f0ec14;
   }
   .slider #input-rotate3{
     position: absolute;
-    bottom: 1.5%;
-    left: 20%;
-    width: 70%;
+    bottom: 3%;
+    left: 30%;
+    width: 65%;
     height: 5px;
     accent-color: #dfca10;
   }
   .slider #input-size4{
     position: absolute;
-    bottom: 6%;
-    left: 20%;
-    width: 70%;
+    bottom: 12%;
+    left: 30%;
+    width: 65%;
     height: 5px;
     accent-color: #f0ec14;
   }
   .slider #input-rotate4{
     position: absolute;
-    bottom: 1.5%;
-    left: 20%;
-    width: 70%;
+    bottom: 3%;
+    left: 30%;
+    width: 65%;
     height: 5px;
     accent-color: #dfca10;
   }
  .slider #input-size5{
    position: absolute;
-   bottom: 6%;
-   left: 20%;
-   width: 70%;
+   bottom: 12%;
+   left: 30%;
+    width: 65%;
    height: 5px;
    accent-color: #f0ec14;
  }
  .slider #input-rotate5{
    position: absolute;
-   bottom: 1.5%;
-   left: 20%;
-   width: 70%;
+   bottom:3%;
+   left: 30%;
+    width: 65%;
    height: 5px;
    accent-color: #dfca10;
  }
@@ -3188,15 +3187,20 @@ body {
 }
 #back {
   position: absolute;
-  bottom: -23%;
-  right: 5%;
+  top:16%;
+  right: 1%;
   width: 25%;
-  height: 8.5%;
+  height: 10%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  background: #082988;
 }
 #backtext {
   position: absolute;
-  left: 10%;
-  top: 25%;
+  left: 15%;
+  top: 23%;
 }
 .wraper_kaos #download {
   position: absolute;
@@ -3324,116 +3328,129 @@ body {
   left: 15%;
 }
 
-/* #contenerukuran {
+ /* #contenerukuran {
   position: absolute;
-  bottom: 1%;
-  left: 1%;
-  width: 48%;
-  height: 8%;
+  bottom: -1%;
+  right: 2%;
+  width: 95%;
+  height: 10%;
   border-radius: 10px;
   border: 1px solid #ccc;
-  font-size: 50%;  
+  background-color: white;
+  font-size: 50%;
 }
+
 
 #contenerputar {
   position: absolute;
-  bottom: 1%;
-  right: 1%;
-  width: 48%;
-  height: 8%;
+  bottom: -13%;
+  right: 2%;
+  width: 95%;
+  height: 10%;
   border-radius: 10px;
   border: 1px solid #ccc;
+  background-color: white;
   font-size: 50%;
 }
 
   
 #contenerukuran2 {
   position: absolute;
-  bottom: 1%;
-  left: 1%;
-  width: 48%;
-  height: 8%;
+  bottom: -1%;
+  right: 2%;
+  width: 95%;
+  height: 10%;
   border-radius: 10px;
   border: 1px solid #ccc;
+  background-color: white;
   font-size: 50%;
 }
 
+
 #contenerputar2 {
   position: absolute;
-  bottom: 1%;
-  right: 1%;
-  width: 48%;
-  height: 8%;
+  bottom: -13%;
+  right: 2%;
+  width: 95%;
+  height: 10%;
   border-radius: 10px;
   border: 1px solid #ccc;
+  background-color: white;
   font-size: 50%;
 }
 
  #contenerukuran3 {
   position: absolute;
-  bottom: 1%;
-  left: 1%;
-  width: 48%;
-  height: 8%;
+  bottom: -1%;
+  right: 2%;
+  width: 95%;
+  height: 10%;
   border-radius: 10px;
   border: 1px solid #ccc;
+  background-color: white;
   font-size: 50%;
 }
+
 
 #contenerputar3 {
   position: absolute;
-  bottom: 1%;
-  right: 1%;
-  width: 48%;
-  height: 8%;
+  bottom: -13%;
+  right: 2%;
+  width: 95%;
+  height: 10%;
   border-radius: 10px;
   border: 1px solid #ccc;
+  background-color: white;
   font-size: 50%;
-  display:none;
 }
 
   #contenerukuran4 {
-  position: absolute;
-  bottom: 1%;
-  left: 1%;
-  width: 48%;
-  height: 8%;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  font-size: 50%;
-}
+    position: absolute;
+    bottom: -1%;
+    right: 2%;
+    width: 95%;
+    height: 10%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 50%;
+  }
+
 
 #contenerputar4 {
   position: absolute;
-  bottom: 1%;
-  right: 1%;
-  width: 48%;
-  height: 8%;
+  bottom: -13%;
+  right: 2%;
+  width: 95%;
+  height: 10%;
   border-radius: 10px;
   border: 1px solid #ccc;
+  background-color: white;
   font-size: 50%;
 }
 #contenerukuran5 {
   position: absolute;
-  bottom: 1%;
-  left: 1%;
-  width: 48%;
-  height: 8%;
+  bottom: -1%;
+  right: 2%;
+  width: 95%;
+  height: 10%;
   border-radius: 10px;
   border: 1px solid #ccc;
+  background-color: white;
   font-size: 50%;
 }
 
 #contenerputar5 {
   position: absolute;
-  bottom: 1%;
-  right: 1%;
-  width: 48%;
-  height: 8%;
+  bottom: -13%;
+  right: 2%;
+  width: 95%;
+  height: 10%;
   border-radius: 10px;
   border: 1px solid #ccc;
+  background-color: white;
   font-size: 50%;
-} */
+}  */
 #kembali {
   position: absolute;
   top:30%;

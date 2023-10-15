@@ -739,7 +739,7 @@ body {
 .contenerkaos {
   width: 95%;
   height: 82%;
-  top:8%;
+  top:7%;
   left:2.5%;
   position: absolute;
   background-color: white;
@@ -922,12 +922,12 @@ body {
   mix-blend-mode: multiply;
 }
 
-/* #contenerukuran {
+ #contenerukuran {
   position: absolute;
-  bottom: 1%;
-  left: 2%;
-  width: 200px;
-  height: 70;
+  bottom: 6%;
+  right: 2%;
+  width: 95%;
+  height: 4%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
@@ -937,8 +937,8 @@ body {
   position: absolute;
   bottom: 1%;
   right: 2%;
-  width: 200px;
-  height: 70;
+  width: 95%;
+  height: 4%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
@@ -947,10 +947,10 @@ body {
 
 #contenerukuran2 {
   position: absolute;
-  bottom: 1%;
-  left: 2%;
-  width: 200px;
-  height: 70;
+  bottom: 6%;
+  right: 2%;
+  width: 95%;
+  height: 4%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
@@ -960,8 +960,8 @@ body {
   position: absolute;
   bottom: 1%;
   right: 2%;
-  width: 200px;
-  height: 70;
+  width: 95%;
+  height: 4%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
@@ -970,10 +970,10 @@ body {
 
 #contenerukuran3 {
   position: absolute;
-  bottom: 1%;
-  left: 2%;
-  width: 200px;
-  height: 70;
+  bottom: 6%;
+  right: 2%;
+  width: 95%;
+  height: 4%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
@@ -983,18 +983,18 @@ body {
   position: absolute;
   bottom: 1%;
   right: 2%;
-  width: 200px;
-  height: 70;
+  width: 95%;
+  height: 4%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
 }
 #contenerukuran4 {
   position: absolute;
-  bottom: 1%;
-  left: 2%;
-  width: 200px;
-  height: 70;
+  bottom: 6%;
+  right: 2%;
+  width: 95%;
+  height: 4%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
@@ -1003,18 +1003,18 @@ body {
   position: absolute;
   bottom: 1%;
   right: 2%;
-  width: 200px;
-  height: 70;
+  width: 95%;
+  height: 4%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
 }
 #contenerukuran5 {
   position: absolute;
-  bottom: 1%;
-  left: 2%;
-  width: 200px;
-  height: 70;
+  bottom: 6%;
+  right: 2%;
+  width: 95%;
+  height: 4%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
@@ -1024,12 +1024,12 @@ body {
   position: absolute;
   bottom: 1%;
   right: 2%;
-  width: 200px;
-  height: 70;
+  width: 95%;
+  height: 4%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
-} */
+}
 .load {
 /*  border: 1px solid red;*/
   position: absolute;
@@ -1206,81 +1206,81 @@ body {
   }
   .slider #input-size{
     position: absolute;
-    bottom: 6%;
-    left: 20%;
-    width: 70%;
+    bottom: 30%;
+   left: 20%;
+   width: 75%;
     height: 5px;
     accent-color: yellow;
   }
   .slider #input-rotate{
     position: absolute;
-    bottom: 1.5%;
-    left: 20%;
-    width: 70%;
+    bottom: 30%;
+   left: 20%;
+   width: 75%;
     height: 5px;
     accent-color: yellow;
   }
   .slider #input-size2{
     position: absolute;
-    bottom: 6%;
-    left: 20%;
-    width: 70%;
+    bottom: 30%;
+   left: 20%;
+   width: 75%;
     height: 5px;
     accent-color: yellow;
   }
   .slider #input-rotate2{
     position: absolute;
-    bottom: 1.5%;
-    left: 20%;
-    width: 70%;
+    bottom: 30%;
+   left: 20%;
+   width: 75%;
     height: 5px;
     accent-color: yellow;
   }
   .slider #input-size3{
     position: absolute;
-    bottom: 6%;
-    left: 20%;
-    width: 70%;
+    bottom: 30%;
+   left: 20%;
+   width: 75%;
     height: 5px;
     accent-color: yellow;
   }
   .slider #input-rotate3{
     position: absolute;
-    bottom: 1.5%;
-    left: 20%;
-    width: 70%;
+    bottom: 30%;
+   left: 20%;
+   width: 75%;
     height: 5px;
     accent-color: yellow;
   }
   .slider #input-size4{
     position: absolute;
-    bottom: 6%;
-    left: 20%;
-    width: 70%;
+    bottom: 30%;
+   left: 20%;
+   width: 75%;
     height: 5px;
     accent-color: yellow;
   }
   .slider #input-rotate4{
     position: absolute;
-    bottom: 1.5%;
-    left: 20%;
-    width: 70%;
+    bottom: 30%;
+   left: 20%;
+   width: 75%;
     height: 5px;
     accent-color: yellow;
   }
  .slider #input-size5{
    position: absolute;
-   bottom: 6%;
+   bottom: 30%;
    left: 20%;
-   width: 70%;
+   width: 75%;
    height: 5px;
    accent-color: yellow;
  }
  .slider #input-rotate5{
    position: absolute;
-   bottom: 1.5%;
+   bottom: 30%;
    left: 20%;
-   width: 70%;
+   width: 75%;
    height: 5px;
    accent-color: yellow;
  }
@@ -2161,12 +2161,12 @@ body {
   mix-blend-mode: multiply;
 }
 
-/* #contenerukuran {
+ #contenerukuran {
   position: absolute;
-  bottom: 1%;
-  left: 2%;
-  width: 170px;
-  height: 70;
+  bottom: 10%;
+  right: 2%;
+  width: 95%;
+  height: 6%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
@@ -2174,10 +2174,10 @@ body {
 
 #contenerputar {
   position: absolute;
-  bottom: 1%;
+  bottom: 2%;
   right: 2%;
-  width: 170px;
-  height: 70;
+  width: 95%;
+  height: 6%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
@@ -2186,10 +2186,10 @@ body {
 
 #contenerukuran2 {
   position: absolute;
-  bottom: 1%;
-  left: 2%;
-  width: 170px;
-  height: 70;
+  bottom: 10%;
+  right: 2%;
+  width: 95%;
+  height: 6%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
@@ -2197,10 +2197,10 @@ body {
 
 #contenerputar2 {
   position: absolute;
-  bottom: 1%;
+  bottom: 2%;
   right: 2%;
-  width: 170px;
-  height: 70;
+  width: 95%;
+  height: 6%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
@@ -2209,10 +2209,10 @@ body {
 
 #contenerukuran3 {
   position: absolute;
-  bottom: 1%;
-  left: 2%;
-  width: 170px;
-  height: 70;
+  bottom: 10%;
+  right: 2%;
+  width: 95%;
+  height: 6%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
@@ -2220,40 +2220,40 @@ body {
 
 #contenerputar3 {
   position: absolute;
-  bottom: 1%;
+  bottom: 2%;
   right: 2%;
-  width: 170px;
-  height: 70;
+  width: 95%;
+  height: 6%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
 }
 #contenerukuran4 {
   position: absolute;
-  bottom: 1%;
-  left: 2%;
-  width: 170px;
-  height: 70;
+  bottom: 10%;
+  right: 2%;
+  width: 95%;
+  height: 6%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
 }
 #contenerputar4 {
   position: absolute;
-  bottom: 1%;
+  bottom: 2%;
   right: 2%;
-  width: 170px;
-  height: 70;
+  width: 95%;
+  height: 6%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
 }
 #contenerukuran5 {
   position: absolute;
-  bottom: 1%;
-  left: 2%;
-  width: 170px;
-  height: 70;
+  bottom: 10%;
+  right: 2%;
+  width: 95%;
+  height: 6%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
@@ -2261,14 +2261,14 @@ body {
 
 #contenerputar5 {
   position: absolute;
-  bottom: 1%;
+  bottom: 2%;
   right: 2%;
-  width: 170px;
-  height: 70;
+  width: 95%;
+  height: 6%;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: white;
-} */
+}
 .load {
 /*  border: 1px solid red;*/
   position: absolute;
@@ -2432,7 +2432,7 @@ body {
 }
 .slider .filter-size{
   position: absolute;
-  bottom: 12%;
+  bottom: 15%;
   left: 4%;
    display: flex;
    color:black;
@@ -2441,7 +2441,7 @@ body {
  }
  .slider .filter-rotate{
    position: absolute;
-   bottom: 3%;
+   bottom: 15%;
    left: 5%;
    display: flex;
    color:black;
@@ -2450,7 +2450,7 @@ body {
   }
   .slider #input-size{
     position: absolute;
-    bottom: 12%;
+    bottom: 40%;
     left: 30%;
     width: 65%;
     height: 5px;
@@ -2458,7 +2458,7 @@ body {
   }
   .slider #input-rotate{
     position: absolute;
-    bottom: 3%;
+    bottom: 40%;
     left: 30%;
     width: 65%;
     height: 5px;
@@ -2466,7 +2466,7 @@ body {
   }
   .slider #input-size2{
     position: absolute;
-    bottom: 12%;
+    bottom: 40%;
     left: 30%;
     width: 65%;
     height: 5px;
@@ -2474,7 +2474,7 @@ body {
   }
   .slider #input-rotate2{
     position: absolute;
-    bottom: 3%;
+    bottom: 40%;
     left: 30%;
     width: 65%;
     height: 5px;
@@ -2482,7 +2482,7 @@ body {
   }
   .slider #input-size3{
     position: absolute;
-    bottom: 12%;
+    bottom: 40%;
     left: 30%;
     width: 65%;
     height: 5px;
@@ -2490,7 +2490,7 @@ body {
   }
   .slider #input-rotate3{
     position: absolute;
-    bottom: 3%;
+    bottom: 40%;
     left: 30%;
     width: 65%;
     height: 5px;
@@ -2498,7 +2498,7 @@ body {
   }
   .slider #input-size4{
     position: absolute;
-    bottom: 12%;
+    bottom: 40%;
     left: 30%;
     width: 65%;
     height: 5px;
@@ -2506,7 +2506,7 @@ body {
   }
   .slider #input-rotate4{
     position: absolute;
-    bottom: 3%;
+    bottom: 40%;
     left: 30%;
     width: 65%;
     height: 5px;
@@ -2514,7 +2514,7 @@ body {
   }
  .slider #input-size5{
    position: absolute;
-   bottom: 12%;
+   bottom: 40%;
    left: 30%;
     width: 65%;
    height: 5px;
@@ -2522,7 +2522,7 @@ body {
  }
  .slider #input-rotate5{
    position: absolute;
-   bottom:3%;
+   bottom:40%;
    left: 30%;
     width: 65%;
    height: 5px;
@@ -3379,7 +3379,7 @@ body {
   left: 15%;
 }
 
- /* #contenerukuran {
+  #contenerukuran {
   position: absolute;
   bottom: -1%;
   right: 2%;
@@ -3501,7 +3501,7 @@ body {
   border: 1px solid #ccc;
   background-color: white;
   font-size: 50%;
-}  */
+}
 #kembali {
   position: absolute;
   top:30%;
@@ -3511,7 +3511,7 @@ body {
 }
 .slider .filter-size{
   position: absolute;
-  bottom: 5%;
+  bottom: 60%;
   left: 36%;
    display: flex;
    color:black;
@@ -3520,7 +3520,7 @@ body {
  }
  .slider .filter-rotate{
    position: absolute;
-   bottom: -6%;
+   bottom: 60%;
    left: 38%;
    display: flex;
    color:black;
@@ -3529,7 +3529,7 @@ body {
   }
   .slider #input-size{
    position: absolute;
-   bottom: 2%;
+   bottom: 30%;
    left: 4%;
    width: 90%;
    height: 5px;
@@ -3538,7 +3538,7 @@ body {
   }
   .slider #input-rotate{
    position: absolute;
-   bottom: -10%;
+   bottom: 30%;
    left: 4%;
    width: 90%;
    height: 5px;
@@ -3547,7 +3547,7 @@ body {
   }
   .slider #input-size2{
     position: absolute;
-    bottom: 2%;
+    bottom: 30%;
    left: 4%;
    width: 90%;
    height: 5px;
@@ -3556,7 +3556,7 @@ body {
   }
   .slider #input-rotate2{
    position: absolute;
-   bottom: -10%;
+   bottom: 30%;
    left: 4%;
    width: 90%;
    height: 5px;
@@ -3565,7 +3565,7 @@ body {
   }
   .slider #input-size3{
     position: absolute;
-    bottom: 2%;
+    bottom: 30%;
    left: 4%;
    width: 90%;
    height: 5px;
@@ -3574,7 +3574,7 @@ body {
   }
   .slider #input-rotate3{
    position: absolute;
-   bottom: -10%;
+   bottom: 30%;
    left: 4%;
    width: 90%;
    height: 5px;
@@ -3583,7 +3583,7 @@ body {
   }
   .slider #input-size4{
     position: absolute;
-    bottom: 2%;
+    bottom: 30%;
    left: 4%;
    width: 90%;
    height: 5px;
@@ -3592,7 +3592,7 @@ body {
   }
   .slider #input-rotate4{
    position: absolute;
-   bottom: -10%;
+   bottom: 30%;
    left: 4%;
    width: 90%;
    height: 5px;
@@ -3601,7 +3601,7 @@ body {
   }
  .slider #input-size5{
    position: absolute;
-   bottom: 2%;
+   bottom: 30%;
    left: 4%;
    width: 90%;
    height: 5px;
@@ -3609,7 +3609,7 @@ body {
  }
  .slider #input-rotate5{
    position: absolute;
-   bottom: -10%;
+   bottom: 30%;
    left: 4%;
    width: 90%;
    height: 5px;

@@ -2779,9 +2779,8 @@ body {
 }
 #textputih {
   position: absolute;
-  top: 16%;
-  left: 6%;
-  display: none;
+  top: 42%;
+  left: 26%;
 }
 #texthitam {
   position: absolute;
@@ -2813,9 +2812,8 @@ body {
 }
 #textmaroon {
   position: absolute;
-  top: 36%;
-  left: 24%;
-  display: none;
+  top: 90%;
+  left: 44%;
 }
 #textteracota {
   position: absolute;
@@ -2827,6 +2825,7 @@ body {
   position: absolute;
   top: 42%;
   left: 26%;
+  display: none;
 }
 #textfanta {
   position: absolute;
@@ -2835,9 +2834,8 @@ body {
 }
 #textnavy {
   position: absolute;
-  top: 16%;
-  left: 46%;
-  display: none;
+  top: 90%;
+  left: 87%;
 }
 #textbiruturkis {
   position: absolute;
@@ -2860,6 +2858,7 @@ body {
   position: absolute;
   top: 90%;
   left: 42%;
+  display: none;
 }
 #texthijaubotol {
   position: absolute;
@@ -2916,15 +2915,15 @@ body {
   position: absolute;
   top: 90%;
   left: 85%;
+  display: none;
 }
 #warnakaos #putih {
-  width: calc(50px - 20px);
-  height: calc(50px - 20px);
+  width: calc(50px - 5px);
+  height: calc(50px - 5px);
   border-radius: 50%;
   position: absolute;
-  left: 3%;
-  top: -2%;
-  display: none;
+  left: 22%;
+  top: 1%;
 }
 #warnakaos #hitam {
   width: calc(50px - 20px);
@@ -2967,13 +2966,12 @@ body {
   display: none;
 }
 #warnakaos #maroon {
-  width: calc(50px - 20px);
-  height: calc(50px - 20px);
+  width: calc(50px - 5px);
+  height: calc(50px - 5px);
   border-radius: 50%;
   position: absolute;
-  left: 22%;
-  top: 18%;
-  display: none;
+  left: 42%;
+  top: 50%;
 }
 #warnakaos #teracota {
   width: calc(50px - 20px);
@@ -2991,6 +2989,7 @@ body {
   position: absolute;
   left: 22%;
   top: 1%;
+  display: none;
 }
 #warnakaos #fanta {
   width: calc(50px - 5px);
@@ -3001,13 +3000,11 @@ body {
   top: 50%;
 }
 #warnakaos #navy {
-  width: calc(50px - 20px);
-  height: calc(50px - 20px);
+  width: calc(50px - 5px);
+  height: calc(50px - 5px);
   border-radius: 50%;
-  position: absolute;
-  left: 42%;
-  top: -2%;
-  display: none;
+  top: 50%;
+  right: 1%;
 }
 #warnakaos #biruturkis {
   width: calc(50px - 20px);
@@ -3042,6 +3039,7 @@ body {
   position: absolute;
   left: 42%;
   top: 50%;
+  display: none;
 }
 #warnakaos #hijaubotol {
   width: calc(50px - 20px);
@@ -3112,6 +3110,7 @@ body {
   border-radius: 50%;
   top: 50%;
   right: 1%;
+  display: none;
 }
 
 

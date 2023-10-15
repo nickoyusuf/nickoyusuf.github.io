@@ -4,9 +4,19 @@ colorinput.addEventListener('input',()=> {
 	color.style.fill = colorinput.value;
 });
 
-document.getElementById("back").onclick = function(){
+let back = document.getElementById('back');
+let front = document.getElementById('front');
+back.addEventListener('click',()=> {
 	document.getElementById("kaos").src = "img/back.png";
-}
+	back.style.display = 'none';
+	front.style = 'display';
+});
+front.addEventListener('click',()=> {
+	document.getElementById("kaos").src = "img/front.png";
+	front.style.display = 'none';
+	back.style = 'display';
+});
+
 
 document.getElementById("hitam").onclick = function(){
 	document.getElementById("svg").style.fill = "black";

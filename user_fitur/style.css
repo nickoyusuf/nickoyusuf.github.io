@@ -882,15 +882,15 @@ body {
   overflow:hidden;
   background-color: salmon;
 }*/
-.contenerdesain {
+/* .contenerdesain {
   width: 30%;
   height: 40%;
-/*  border: solid red 2px;*/
+  border: solid red 2px;
   position: absolute;
   top:20%;
   left:35%;
-/*  background-color: salmon;*/
-}
+  background-color: salmon;
+} */
 #templet {
   position: absolute;
   width: 100%;
@@ -2122,15 +2122,15 @@ body {
   overflow:hidden;
   background-color: salmon;
 }*/
-.contenerdesain {
+/* .contenerdesain {
   width: 40%;
   height: 40%;
-/*  border: solid red 2px;*/
+  border: solid red 2px;
   position: absolute;
   top:20%;
   left:30%;
-/*  background-color: salmon;*/
-}
+  background-color: salmon;
+} */
 #templet {
   position: absolute;
   width: 100%;
@@ -3142,15 +3142,15 @@ body {
   overflow:hidden;
   background-color: salmon;
 }*/
-.contenerdesain {
+/* .contenerdesain {
   width: 35%;
   height: 35%;
-/*  border: solid red 2px;*/
+  border: solid red 2px;
   position: absolute;
   top:20%;
   left:33%;
-/*  background-color: salmon;*/
-}
+  background-color: salmon;
+} */
   #templet {
   position: absolute;
   width: 100%;

@@ -3,26 +3,107 @@
 <head>
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<title>Ls-t-shirt</title>
+			<title>t-shirt</title>
 			 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-			<link rel="stylesheet" type="text/css" href="style.css">
+			<link rel="stylesheet" type="text/css" href="../style.css">
             <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
             </script>
             <script src = "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js">
             </script>
+			<style>
+				.contenerkaos img {
+									width: 74.5%;
+									height: 95%;
+									position: absolute;
+									top: 3%;
+									right: 13.83%;
+									}
+							   #svg {
+								    width: 100%;
+									height: 95%;
+									position: absolute;
+									top: 3%;
+									right: 1%;
+									z-index: 1;
+									fill: red;
+									mix-blend-mode: multiply;
+									}
+					.contenerdesain {
+									width: 25%;
+									height: 35%;
+									/*  border: solid red 2px;*/
+									position: absolute;
+									top:20%;
+									left:37%;
+									/*  background-color: salmon;*/
+									}
+
+				@media screen and (max-width: 1200px) {
+					.contenerkaos img {
+										width: 89.7%;
+										height: 95%;
+										position: absolute;
+										top: 3%;
+										right: 6.2%;
+										}
+								#svg {
+										width: 100%;
+										height: 95%;
+										position: absolute;
+										top: 3%;
+										right: 1%;
+										mix-blend-mode: multiply;
+										}
+						.contenerdesain {
+										width: 35%;
+										height: 35%;
+										/*  border: solid red 2px;*/
+										position: absolute;
+										top:20%;
+										left:32%;
+										/*  background-color: salmon;*/
+										}
+				}
+
+				@media screen and (max-width: 760px) {
+					.contenerkaos img {
+									width: 75%;
+									height: 86%;
+									position: absolute;
+									top: 7.5%;
+									right: 13%;
+									}
+								#svg {
+									width: 75%;
+									position: absolute;
+									top: 3%;
+									right: 13%;
+									mix-blend-mode: multiply;
+										}
+					.contenerdesain {
+									width: 30%;
+									height: 33%;
+									/*  border: solid red 2px;*/
+									position: absolute;
+									top:27%;
+									left:35%;
+									/*  background-color: salmon;*/
+									}
+				}
+			</style>
 </head>
 <body>
 	<div class="navbar">
-        <a href="../../index.html" id="kembali">
-							                         	 <p id="kembalitext">Kembali</p>
-							                          </a>
+         <a href="../../index.html" id="kembali">
+		   <p id="kembalitext">Kembali</p>
+		</a>
         <a href="" id="kembali2">
 			<p id="kembalitext2">kembali</p>
 		</a>
 		<a type="button" id="save">
 		<p id="savetext">Download <i class="bi bi-download"></i></p>
 		</a>
-		<a href="../../index.html" id="home">Home</a>
+		<a href="../../index.html" id="home">Home <i class="fas fa-home"></i></a>
 		<!--<a href="../../auth/registration" id="daftar">Daftar</a>
 		<a href="../../auth/login" id="login">Login</a>-->
 	</div>
@@ -32,12 +113,17 @@
 		<div class="contener_wraper">
 
 							<div class="wraper_editor">
-											                  
-
+											                 
+												<a type="button" id="front">
+													<p id="fronttext">Depan</p>
+												</a>
+												<a type="button" id="back">
+													<p id="backtext">Belakang</p>
+												</a>
 				                                 <a href="" id="riset">
-									    		                  <p id="risettext">reset <i class="bi bi-arrow-counterclockwise"></i>
-									    		                  </p>
-									    	                 </a> 
+													<p id="risettext">reset <i class="bi    bi-arrow-counterclockwise"></i>
+													</p>
+												</a> 
 								                 
 				                                 <a href="../../fitur_edit" id="edit">
 				                         	        <p id="edittext">Edit Desain</p>
@@ -49,7 +135,14 @@
 
 
 										             <div id="warnakaos">
-				                          
+																	<div id="color-wheel">
+																	  <input type="color" id="custom-color" name="head"
+																		hidden/>
+																		<label for="custom-color">
+																			<img src="../../img/colorwheel.png" alt="" width="40px">
+																		</label>
+																	</div>
+																	<div class="text" id="customtext">CUSTOM</div>
 															   
 													                <div id="hitam"></div>
 													                <div class="text" id="texthitam">HITAM</div>
@@ -95,8 +188,8 @@
 														            <div id="ungu"></div>
 														            <div class="text" id="textungu">UNGU</div>   
 												              
-												              	    <div id="abumuda"></div>
-													                <div class="text" id="textabumuda">ABU MUDA</div> 
+												              	    <!-- <div id="abumuda"></div> -->
+													                <!-- <div class="text" id="textabumuda">ABU MUDA</div>  -->
 												              	    <div id="birumuda"></div>
 													                <div class="text" id="textbirumuda">BIRU MUDA</div>
 													                <div id="oren"></div>
@@ -111,16 +204,16 @@
 										              	<h2>BACKGRAUND</h2>
 										            </div>
 										            <div id="warnabg">
-								                                  <div id="bgputih"></div>
+								                                 <div id="bgputih"></div>
 																 <div id="bghitam"></div>
 															     <div id="bgbiru"></div>  
 																 <div id="bgmerah"></div>
 															     <!-- <div id="bgtf"> -->
-															     	<img src="tficon.png" id="bgtf">
+															     	<img src="../../img/tficon.png" id="bgtf">
 															     <!-- </div> -->
 															     <div id="bghijau"></div>
 															     <div id="bgupload" class="buttonbg">
-															     	<img src="uploadicon.png" id="icon">
+															     	<img src="../../img/uploadicon.png" id="icon">
 																	<input type="file" hidden id="file-inputbg">
 																 </div>
 																	     
@@ -139,14 +232,10 @@
 
 
 						    <div class="wraper_kaos">
-                               <a type="button" id="download">
+                                               <a type="button" id="download">
 								                 <p id="downloadtext">Download  <i class="bi bi-download"></i>
 								               </p> 
 								               </a>
-
-								               <a href="Belakang/index.html" id="back">
-		                             <p id="backtext">Belakang</p>
-		                           </a>
 
 									    	 <input type="file" id="file-input" hidden>
 									    	 <div class="button">
@@ -173,13 +262,23 @@
 									    		<p id="upload5">Upload Desain <i class="bi bi-upload"></i></p>
 									    	 </div>
 
-									    	 <a href="https://api.whatsapp.com/send?phone=6285892022876&text=saya%20ingin%20order%20sablon%20kaos%20panjang%20apakah%20bisa?%0Adan%20untuk%20estimasi%20harganya%20berapa?" target="blank" id="order">
+									    	 <a href="https://api.whatsapp.com/send?phone=6285892022876&text=saya%20ingin%20order%20kaos%20t-shirt%20apakah%20bisa?%0Adan%20untuk%20estimasi%20harganya%20berapa?" target="blank" id="order">
 									    		<p id="ordertext">Order <i class="bi bi-whatsapp"></i>
 									    		</p>
 									    	 </a>
 											 <div class="contenerkaos" id = "htmlContent">
 											  	            <div id="gambarbg"></div>
-															<img src="lsdepan/hijaufuji.png" id="kaos">
+															  <svg id="svg" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="84.5345mm" height="90.2732mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+															  viewBox="0 0 1274.98 1361.53"
+															   xmlns:xlink="http://www.w3.org/1999/xlink"
+															   xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+															   
+															   <g id="Layer_x0020_1">
+																<metadata id="CorelCorpID_0Corel-Layer"/>
+																<path class="fil0" d="M1144.56 281.81l5.36 18.59c7.16,24.53 12.33,51.03 17.56,77.21 2.58,12.9 5.27,26.33 7.98,39.9l35.1 203.34c3.92,28.3 6.95,56.61 10.36,84.42 3.53,28.74 6.84,57.55 9.98,85.79 3.19,28.7 7.34,56.25 8.13,86.64l3.08 44.81c0.49,6.29 1.86,15.4 1.95,22l6.97 88.8c0.36,7.59 1.69,14.37 0.66,21.94 1.69,1.97 0.75,-1.5 1.37,3.99l5.14 58.7c1.04,9.79 2.27,20.55 2.85,31.07l13.94 155.66c-9.24,6.19 -46.94,20.42 -58.48,23.33 -9.89,2.49 -33.93,3.48 -45.22,2.56 -9.65,-0.79 -19.92,-2.41 -29,-3.92 -18.1,-3.02 -19.55,-2.94 -21.61,-10.31 -4.22,-15.04 -5.06,-24.28 -7.89,-40 -0.91,-5.05 -1.02,-9.2 -1.58,-14.38 -0.24,-2.2 -0.54,-4.99 -0.97,-8.01 -0.38,-2.67 -1.1,-4.18 -1.58,-6.4l-9.51 -69.31c-0.51,-3.48 -1.97,-9.14 -2.57,-13.39 -11.39,-81.2 -20.27,-162.38 -30.28,-244.07 -4.62,-37.69 -9.55,-76.59 -14.73,-113.97 -6.85,-49.43 -23.86,-152.1 -34.89,-207.54 -0.95,-4.78 -1.32,-9.01 -2.94,-13.88 -4.5,50.05 -1.85,123.39 -1.18,177.77 0.06,5.31 0.92,5.73 1.07,10.75 0.12,4.16 -0.32,8.85 0.02,12.95 0.34,4.1 1.01,5.56 0.95,11.02l1.04 22.9c1.18,14.41 2.54,29.84 2.91,44.97l3.02 45.86c0.3,6.11 1.46,15.95 1.94,22 0.65,8.17 0.47,14.71 1.11,22.84 4.71,60.04 10.57,118.52 16.74,176.8 1.58,14.98 3.2,29.96 4.19,44.69 1.79,26.49 7.52,62.9 8.92,87.85 0.44,7.85 1.57,14.47 2.02,21.93 0.45,7.28 2,14.44 2,21.95 -6.44,3.09 -119.57,24.69 -136.95,27.66 -39.95,6.83 -104.28,15.03 -144.46,18.15 -5.07,0.39 -8.57,0.97 -12.88,1.08l-38.34 2.56c-4.7,0.71 -8.79,0.25 -13.58,0.39 -8.94,0.26 -23.8,1.86 -35.34,2.03l-5.09 0c-7.13,-0.03 -14.3,-0.02 -21.47,0l-29.12 0c-18.45,-0.11 -36.57,-0.53 -53.64,-1.94 -4.4,-0.36 -9.47,0.11 -13.95,-0.02l-37.94 -2.97c-45.06,-3.46 -102.72,-9.59 -145.74,-16.87 -31.53,-5.34 -62.63,-9.77 -92.87,-16.11 -5.51,-0.14 -37.41,-7.44 -45.57,-9.06 -18.32,-3.64 -17.79,-2.09 -17.08,-9.75 0.7,-7.57 1.48,-16.58 2.59,-24.52l4.03 -36.87c0.68,-4.69 0.63,-7.33 1.49,-11.48 4.05,-19.65 2.8,-35.14 5.35,-48.52 1.06,-5.58 1.48,-20.35 1.51,-26.43l6.44 -59.4c2.78,-14.41 1.32,-22.43 3.26,-36.64l3.33 -23.6c0.12,-5.01 -0.07,-9.66 0.68,-13.28 2.48,-11.97 0.63,-22.02 2.54,-37.37 0.44,-3.54 1.66,-7.65 1.76,-12.2 0.69,-29.44 5.92,-68.27 6.92,-101.82l3.05 -36.85c0.65,-7.39 1.06,-17.97 1.82,-25.12l3.14 -78.66c-0,-17.63 0.64,-36.43 0.03,-53.91l-0.08 -24.85c-0.74,-8.98 -1.78,-15.51 -1.01,-24.04 0.86,-9.63 -1.79,-16.22 -0.7,-25.81l-0.11 -5.09c-3.23,-10.73 4.37,-13.25 -4.11,-13.96l-4.7 28.22c-1.41,9.66 -2.71,19.17 -3.98,27.94 -2.76,19.02 -5.2,37.48 -7.37,56.48 -8.5,74.38 -19.83,152.79 -30.27,227.12 -5.33,37.97 -9.39,75.83 -14.98,113.72 -5.28,35.83 -10.45,77.23 -16.38,112.31 -3.19,18.83 -5.68,37.34 -8.43,56.42l-12.61 84.15c-0.69,5.09 -1.41,8.77 -2.11,13.85 -1.73,12.67 -0.37,15.84 -5.71,18.24 -17.33,7.79 -33.33,6.27 -47.96,7.9 -22.24,2.49 -38.67,-2.49 -56.22,-6.92 -26.67,-6.72 -41.08,-17.1 -45.68,-18.17 0,-10.56 0.37,-20.81 2.81,-30.11l3.13 -17.83c0.06,-1.9 -0.31,-3.18 -0.36,-4.18l2.25 -22.84c1.39,-13.24 1.25,-26.96 2.87,-39.03 1.89,-14.12 -2.09,-17.64 2.69,-39.21 1.31,-5.93 0.36,-13.01 1.67,-19.27 0.87,-4.14 1.87,-3.98 1.97,-9.06 0.37,-18.07 1.93,-11.96 1.91,-28.96l2.72 -39.18c0.9,-6.61 -0.41,-13.69 0.82,-20.13 3.63,-19.17 1.48,-17.09 3.27,-31.71l1.39 -5.75c-1.13,-13.6 5.72,-104.92 8.49,-125.98 0.97,-7.33 0.58,-14.06 1.55,-21.4 2.57,-19.52 3.67,-55.36 6.25,-72.56l2.14 -19.81c1.63,-11.79 0.89,-16.13 1.56,-21.38l3.52 -27.51c0.94,-12.96 3.44,-26.33 5.15,-38.64 8.76,-63.27 18.95,-131.94 29.41,-195.06 4.65,-28.03 11.1,-56 16.8,-83.96 0.49,-2.41 1.52,-5.38 2.34,-8.64 4.89,-19.49 6.13,-31.52 12.71,-54.14 13.36,-45.96 35.38,-130.59 55.85,-168.62 9.76,-18.12 10.1,-14.97 18.62,-26.27 12.98,-17.21 41.58,-23.65 57.2,-31.59l56.13 -22.69c5.33,-1.51 10.73,-5.01 15.27,-6.68l35.93 -14.95c1.22,-0.49 2.03,-0.68 3.66,-1.33 3.01,-1.2 4.88,-2.37 7.53,-3.45l87.52 -35.19c13.76,-5.47 6.68,-3.77 14.11,-7.88l1.82 -0.69c0.93,-1.52 -0.93,-1.74 2.17,-0.76 1.13,-1.57 -2.02,-1.94 2.76,-1.23 1.02,-1.54 -0.84,-1.75 2.25,-0.75 1.3,-1.52 0.13,-1.08 2.44,-1.95 1.95,-0.74 0.53,-0.5 2.56,-0.04 1.09,-1.6 -2.1,-1.98 2.8,-1.23 0.93,-1.57 -0.94,-1.77 2.23,-0.75 2.52,-3.38 4.77,-3.99 7.86,-2.61 1.51,0.67 5.33,3.66 7.22,4.86 1.5,0.96 2.35,1.37 3.73,2.25l14.81 8.14c1.46,0.81 2.14,1.38 3.91,2.07l25.8 8.12c17.57,5.04 41.02,8.41 60.27,9.57 11.84,0.72 10.88,-0.57 20.28,0.72 5.87,0.81 5.77,-0.67 10.7,-0.8 4.68,-0.12 5.51,1 10.91,1.08 8.82,0.11 14.11,-0.97 22.01,-1.02 6.24,-0.04 14.04,-1.94 19.85,-3.1l54.83 -15c23.16,-8.32 15.82,-9.89 30.58,-15.84 9.87,0 11.71,2.89 18.2,5.22 9,3.24 9.11,5.42 14.96,8.98l169.41 70.02c11.61,4.88 22.13,9.23 33.76,14.12l33.21 13.68c14.45,5.75 16.69,7.65 28.47,19.42 6.76,6.75 10.85,12.02 16.13,19.78 1.86,2.74 2.88,4.87 4.57,7.4 15.97,24.01 15.18,33.33 22.22,49.61 6.47,14.95 14.93,42.38 18.37,58.44 0.93,4.32 -0.04,1.55 1.59,4.39 3.27,5.71 1.49,1.21 2.98,8.99z"/>
+															   </g>
+															  </svg>
+															<img src="front.png" id="kaos">
                                                             <!-- <div id="overflow"> -->
 															   <div class="contenerdesain">
 																	  <div  id="drag-area">  
@@ -200,73 +299,103 @@
 																					</div> 
 
 																					<div id="load5">
-                                              <div  id="templet">
+                                                                                         <div  id="templet">
 																						      <i id="italic">
 																							      	DESAIN MU DI SINI <br><br>
 																							      	BISA FOTO,KATA-KATA DLL
 																						      </i>
 																						  </div>
-																				         <div class="gambar5"></div>
+																				        <div class="gambar5"></div>
 																					</div>   
 																				 
 																		</div>
 															   </div>
                                                             <!-- </div> -->
 										     </div>
-                                             <div id="contenerputar">
-						             	       <label for="putar"><p>PUTAR</p></label>
-								   	           <input type="range" name="" id="putar" min="0" max="360"> 
-		                                     </div>
-		                                      
-		                    
-		                                     <div id="contenerukuran">
-		              	                       <label for="ukuran"><p>UKURAN DESAIN</p></label>
-				   	         	               <input type="range" name="" id="ukuran" min="20" max="400">
-                                             </div>
+											 <div class="slider" id="contenerukuran">
+												<div class="filter-size">
+													<p class="name">Ukuran desain</p>
+													<!-- <p class="value">100%</p> -->
+												</div>
+												<input id="input-size" type="range" value="300" min="0" max="600">
+											</div>
+									
+											<div class="slider" id="contenerputar">
+												<div class="filter-rotate">
+													<p class="name">Putar desain</p>
+													<!-- <p class="value">100%</p> -->
+												</div>
+												<input id="input-rotate" type="range" value="180" min="0" max="360">
+											</div>
                             
-                                             <div id="contenerputar2">
-						             	       <label for="putar2"><p>PUTAR</p></label>
-								   	           <input type="range" name="" id="putar2" min="0" max="360"> 
-		                                     </div>
-		                    
-		                                     <div id="contenerukuran2">
-		              	                       <label for="ukuran2"><p>UKURAN DESAIN</p></label>
-				   	         	               <input type="range" name="" id="ukuran2" min="20" max="400">
-                                             </div>
+                                             <div class="slider" id="contenerukuran2">
+												<div class="filter-size">
+													<p class="name">Ukuran desain</p>
+													<!-- <p class="value">100%</p> -->
+												</div>
+												<input id="input-size2" type="range" value="300" min="0" max="600">
+											</div>
+									
+											<div class="slider" id="contenerputar2">
+												<div class="filter-rotate">
+													<p class="name">Putar desain</p>
+													<!-- <p class="value">100%</p> -->
+												</div>
+												<input id="input-rotate2" type="range" value="180" min="0" max="360">
+											</div>
                             
-                                             <div id="contenerputar3">
-						             	        <label for="putar3"><p>PUTAR</p></label>
-								   	            <input type="range" name="" id="putar3" min="0" max="360"> 
-		                                     </div>
-		                    
-		                                     <div id="contenerukuran3">
-		              	                       <label for="ukuran3"><p>UKURAN DESAIN</p></label>
-				   	         	               <input type="range" name="" id="ukuran3" min="20" max="400">
-                                             </div>
+                                             <div class="slider" id="contenerukuran3">
+												<div class="filter-size">
+													<p class="name">Ukuran desain</p>
+													<!-- <p class="value">100%</p> -->
+												</div>
+												<input id="input-size3" type="range" value="300" min="0" max="600">
+											</div>
+									
+											<div class="slider" id="contenerputar3">
+												<div class="filter-rotate">
+													<p class="name">Putar desain</p>
+													<!-- <p class="value">100%</p> -->
+												</div>
+												<input id="input-rotate3" type="range" value="180" min="0" max="360">
+											</div>
                             
-                                            <div id="contenerputar4">
-						             	       <label for="putar4"><p>PUTAR</p></label>
-								   	           <input type="range" name="" id="putar4" min="0" max="360"> 
-		                                    </div>
-		                    
-		                                    <div id="contenerukuran4">
-		              	                       <label for="ukuran4"><p>UKURAN DESAIN</p></label>
-				   	         	               <input type="range" name="" id="ukuran4" min="20" max="400">
-                                            </div>
+											 <div class="slider" id="contenerukuran4">
+												<div class="filter-size">
+													<p class="name">Ukuran desain</p>
+													<!-- <p class="value">100%</p> -->
+												</div>
+												<input id="input-size4" type="range" value="300" min="0" max="600">
+											</div>
+									
+											<div class="slider" id="contenerputar4">
+												<div class="filter-rotate">
+													<p class="name">Putar desain</p>
+													<!-- <p class="value">100%</p> -->
+												</div>
+												<input id="input-rotate4" type="range" value="180" min="0" max="360">
+											</div>
 
-										    <div id="contenerputar5">
-						             	       <label for="putar5"><p>PUTAR</p></label>
-								   	           <input type="range" name="" id="putar5" min="0" max="360"> 
-		                                    </div>
-		                    
-		                                    <div id="contenerukuran5">
-		              	                       <label for="ukuran5"><p>UKURAN DESAIN</p></label>
-				   	         	               <input type="range" name="" id="ukuran5" min="20" max="400">
-                                            </div>
+										    <div class="slider" id="contenerukuran5">
+												<div class="filter-size">
+													<p class="name">Ukuran desain</p>
+													<!-- <p class="value">100%</p> -->
+												</div>
+												<input id="input-size5" type="range" value="300" min="0" max="600">
+											</div>
+									
+											<div class="slider" id="contenerputar5">
+												<div class="filter-rotate">
+													<p class="name">Putar desain</p>
+													<!-- <p class="value">100%</p> -->
+												</div>
+												<input id="input-rotate5" type="range" value="180" min="0" max="360">
+											</div>
+									
 						    </div>
 
 	    </div>
   </div>
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
 </body>
 </html>

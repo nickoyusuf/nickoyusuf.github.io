@@ -569,7 +569,7 @@ draggableElem5.addEventListener(events[deviceType].down, (e) => {
   conukuran.style.display = 'none';
   conputar.style.display = 'none';
   
-  draggableElem5.style.border = 'dashed 2px yellow';
+  draggableElem5.style.border = 'dashed 1px yellow';
   conukuran5.style = 'display';
   conputar5.style = 'display';
   //Start movement
@@ -599,7 +599,7 @@ draggableElem4.addEventListener(events[deviceType].down, (e) => {
   conukuran.style.display = 'none';
   conputar.style.display = 'none';
   
-  draggableElem4.style.border = 'dashed 2px yellow';
+  draggableElem4.style.border = 'dashed 1px yellow';
   conukuran4.style = 'display';
   conputar4.style = 'display';
   //Start movement
@@ -628,7 +628,7 @@ draggableElem3.addEventListener(events[deviceType].down, (e) => {
   conukuran.style.display = 'none';
   conputar.style.display = 'none';
   
-  draggableElem3.style.border = 'dashed 2px yellow';
+  draggableElem3.style.border = 'dashed 1px yellow';
   conukuran3.style = 'display';
   conputar3.style = 'display';
   //Start movement
@@ -656,7 +656,7 @@ draggableElem2.addEventListener(events[deviceType].down, (e) => {
   conukuran.style.display = 'none';
   conputar.style.display = 'none';
   
-  draggableElem2.style.border = 'dashed 2px yellow';
+  draggableElem2.style.border = 'dashed 1px yellow';
   conukuran2.style = 'display';
   conputar2.style = 'display';
   //Start movement
@@ -684,7 +684,7 @@ draggableElem.addEventListener(events[deviceType].down, (e) => {
   conukuran2.style.display = 'none';
   conputar2.style.display = 'none';
   
-  draggableElem.style.border = 'dashed 2px yellow';
+  draggableElem.style.border = 'dashed 1px yellow';
   conukuran.style = 'display';
   conputar.style = 'display';
   //Start movement

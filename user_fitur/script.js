@@ -958,26 +958,36 @@ $(document).ready(function(){
   });
 });
 
+var gambar = document.getElementsByClassName('imgsave')[0];
+    var save = document.getElementById('save');
 
-function autoClick(){
-        $("#save").click();
-      }
-
-      $(document).ready(function(){
-        var element = $("#replace");
-
-        $("#save").on('click', function(){
-
-          html2canvas(element, {
-            onrendered: function(canvas) {
-              var imageData = canvas.toDataURL("image/jpg");
-              var newData = imageData.replace(/^data:image\/jpg/, "data:application/octet-stream");
-              $("#save").attr("download", "image.jpg").attr("href", newData);
-            }
-          });
-
+    save.addEventListener('click',()=> {
+        domtoimage.toPng(gambar).then((data)=>{
+            var link = document.createElement('a');
+            link.download = 'my ticket.png';
+            link.href = data;
+            link.click();
         });
-      });
+    });
+// function autoClick(){
+//         $("#save").click();
+//       }
+
+//       $(document).ready(function(){
+//         var element = $("#replace");
+
+//         $("#save").on('click', function(){
+
+//           html2canvas(element, {
+//             onrendered: function(canvas) {
+//               var imageData = canvas.toDataURL("image/jpg");
+//               var newData = imageData.replace(/^data:image\/jpg/, "data:application/octet-stream");
+//               $("#save").attr("download", "image.jpg").attr("href", newData);
+//             }
+//           });
+
+//         });
+//       });
 
 
 

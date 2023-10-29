@@ -19,7 +19,7 @@ front.addEventListener('click',()=> {
 
 
 document.getElementById("hitam").onclick = function(){
-	document.getElementById("svg").style.fill = "black";
+	document.getElementById("svg").style.fill = "#333030";
 }
 document.getElementById("putih").onclick = function(){
 	document.getElementById("svg").style.fill = "white";

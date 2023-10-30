@@ -964,7 +964,7 @@ var gambar = document.getElementsByClassName('imgsave')[0];
     save.addEventListener('click',()=> {
         domtoimage.toPng(gambar).then((data)=>{
             var link = document.createElement('a');
-            link.download = 'my ticket.png';
+            link.download = 'aplikasisablon.png';
             link.href = data;
             link.click();
         });

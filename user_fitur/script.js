@@ -958,7 +958,7 @@ draggableElem5.onclick =() => {
 //   });
 // });
 
-var gambar = document.getElementsByClassName('imgsave')[0];
+var gambar = document.getElementById('htmlcontent')[0];
     var save = document.getElementById('download');
 
     save.addEventListener('click',()=> {

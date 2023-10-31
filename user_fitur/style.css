@@ -2568,8 +2568,8 @@ body {
 }
  #replace {
   position: absolute;
-  width: 200%;
-  height: 120%;
+  width: 100%;
+  height: 60%;
   left: 0%;
 /*  background-color: red;*/
 }

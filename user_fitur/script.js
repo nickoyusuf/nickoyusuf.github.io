@@ -929,8 +929,8 @@ const ukuran5 = document.getElementById('input-size5');
 ukuran5.addEventListener('input',function() {
 	const y = ukuran5.value;
 	const z = ukuran5.value;
-	draggableElem5.style.width = + y +'%';
-	draggableElem5.style.height = + z +'%';
+	draggableElem5.style.width = + y +'px';
+	draggableElem5.style.height = + z +'px';
    // console.log(ukuran.value);
 });
 
@@ -951,15 +951,15 @@ draggableElem5.onclick =() => {
 	conputar5.style = 'display';
 };
 
-$(document).ready(function(){
-  $("#download").click(function(){
-  	var view = document.getElementById("htmlContent");
-    $("span").html(view);
-  });
-});
+// $(document).ready(function(){
+//   $("#download").click(function(){
+//   	var view = document.getElementById("htmlContent");
+//     $("span").html(view);
+//   });
+// });
 
 var gambar = document.getElementsByClassName('imgsave')[0];
-    var save = document.getElementById('save');
+    var save = document.getElementById('download');
 
     save.addEventListener('click',()=> {
         domtoimage.toPng(gambar).then((data)=>{

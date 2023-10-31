@@ -951,15 +951,15 @@ draggableElem5.onclick =() => {
 	conputar5.style = 'display';
 };
 
-// $(document).ready(function(){
-//   $("#download").click(function(){
-//   	var view = document.getElementById("htmlContent");
-//     $("span").html(view);
-//   });
-// });
+$(document).ready(function(){
+  $("#download").click(function(){
+  	var view = document.getElementById("htmlContent");
+    $("span").html(view);
+  });
+});
 
-var gambar = document.getElementById('htmlcontent')[0];
-    var save = document.getElementById('download');
+var gambar = document.getElementsByClassName('imgsave')[0];
+    var save = document.getElementById('save');
 
     save.addEventListener('click',()=> {
         domtoimage.toPng(gambar).then((data)=>{

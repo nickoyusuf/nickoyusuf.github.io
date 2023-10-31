@@ -929,8 +929,8 @@ const ukuran5 = document.getElementById('input-size5');
 ukuran5.addEventListener('input',function() {
 	const y = ukuran5.value;
 	const z = ukuran5.value;
-	draggableElem5.style.width = + y +'px';
-	draggableElem5.style.height = + z +'px';
+	draggableElem5.style.width = + y +'%';
+	draggableElem5.style.height = + z +'%';
    // console.log(ukuran.value);
 });
 

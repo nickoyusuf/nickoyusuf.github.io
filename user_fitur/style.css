@@ -49,27 +49,28 @@ body {
   position: absolute;
   width: 50%;
   height: 100%;
-  left: 25%;
+  left: 0%;
   top:0%;
 /*  background-color: red;*/
 }
 
 #save {
   position: absolute;
-  top: 130%;
-  left:45%;
+  top: 50%;
+  left:65%;
   width: 150px;
-  height: 25px;
+  height: 45px;
   border-radius: 5%;
   background-color: green;
   display: none;
+  cursor: pointer;
 }
 
 #savetext {
   position: absolute;
   color: white;
   text-decoration: none;
-  top: 10%;
+  top: 30%;
   left: 20%;
 }
 #kembali2 {
@@ -1322,10 +1323,10 @@ body {
   
 #save {
   position: absolute;
-  top: 150%;
-  left: 300px;
+  top:50%;
+  left: 60%;
   width: 150px;
-  height: 30px;
+  height: 50px;
   border-radius: 5%;
   background-color: green;
   display: none;
@@ -1335,7 +1336,7 @@ body {
   position: absolute;
   color: white;
   text-decoration: none;
-  top: 20%;
+  top: 30%;
   left: 20%;
 }
 
@@ -2576,8 +2577,8 @@ body {
 
 #save {
   position: absolute;
-  top: 500px;
-  left: 23%;
+  top: 400px;
+  left: 22%;
   width: 200px;
   height: 50px;
   border-radius: 5px;

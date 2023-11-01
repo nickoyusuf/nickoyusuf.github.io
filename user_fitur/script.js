@@ -827,8 +827,8 @@ const ukuran = document.getElementById('input-size');
 ukuran.addEventListener('input',function() {
 	const y = ukuran.value;
 	const z = ukuran.value;
-	draggableElem.style.width = + y +'px';
-	draggableElem.style.height = + z +'px';
+	draggableElem.style.width = + y +'%';
+	draggableElem.style.height = + z +'%';
    // console.log(ukuran.value);
 });
 
@@ -843,7 +843,7 @@ const conputar = document.querySelector('#contenerputar');
 
 draggableElem.onclick =() => {
 	
-	draggableElem.style.border = 'dashed 2px yellow';
+	draggableElem.style.border = 'dashed 1px yellow';
 	conukuran.style = 'display';
 	conputar.style = 'display';
 };
@@ -852,8 +852,8 @@ const ukuran2 = document.getElementById('input-size2');
 ukuran2.addEventListener('input',function() {
 	const y = ukuran2.value;
 	const z = ukuran2.value;
-	draggableElem2.style.width = + y +'px';
-	draggableElem2.style.height = + z +'px';
+	draggableElem2.style.width = + y +'%';
+	draggableElem2.style.height = + z +'%';
    // console.log(ukuran.value);
 });
 
@@ -869,7 +869,7 @@ const conputar2 = document.querySelector('#contenerputar2');
 
 draggableElem2.onclick =() => {
 	
-	draggableElem2.style.border = 'dashed 2px yellow';
+	draggableElem2.style.border = 'dashed 1px yellow';
 	conukuran2.style = 'display';
 	conputar2.style = 'display';
 };
@@ -878,8 +878,8 @@ const ukuran3 = document.getElementById('input-size3');
 ukuran3.addEventListener('input',function() {
 	const y = ukuran3.value;
 	const z = ukuran3.value;
-	draggableElem3.style.width = + y +'px';
-	draggableElem3.style.height = + z +'px';
+	draggableElem3.style.width = + y +'%';
+	draggableElem3.style.height = + z +'%';
    // console.log(ukuran.value);
 });
 
@@ -895,7 +895,7 @@ const conputar3 = document.querySelector('#contenerputar3');
 
 draggableElem3.onclick =() => {
 	
-	draggableElem3.style.border = 'dashed 2px yellow';
+	draggableElem3.style.border = 'dashed 1px yellow';
 	conukuran3.style = 'display';
 	conputar3.style = 'display';
 };
@@ -904,8 +904,8 @@ const ukuran4 = document.getElementById('input-size4');
 ukuran4.addEventListener('input',function() {
 	const y = ukuran4.value;
 	const z = ukuran4.value;
-	draggableElem4.style.width = + y +'px';
-	draggableElem4.style.height = + z +'px';
+	draggableElem4.style.width = + y +'%';
+	draggableElem4.style.height = + z +'%';
    // console.log(ukuran.value);
 });
 
@@ -920,7 +920,7 @@ const conukuran4 = document.querySelector('#contenerukuran4');
 const conputar4 = document.querySelector('#contenerputar4');
 draggableElem4.onclick =() => {
 	
-	draggableElem4.style.border = 'dashed 2px yellow';
+	draggableElem4.style.border = 'dashed 1px yellow';
 	conukuran4.style = 'display';
 	conputar4.style = 'display';
 };
@@ -929,8 +929,8 @@ const ukuran5 = document.getElementById('input-size5');
 ukuran5.addEventListener('input',function() {
 	const y = ukuran5.value;
 	const z = ukuran5.value;
-	draggableElem5.style.width = + y +'px';
-	draggableElem5.style.height = + z +'px';
+	draggableElem5.style.width = + y +'%';
+	draggableElem5.style.height = + z +'%';
    // console.log(ukuran.value);
 });
 
@@ -946,7 +946,7 @@ const conputar5 = document.querySelector('#contenerputar5');
 
 draggableElem5.onclick =() => {
 	
-	draggableElem5.style.border = 'dashed 2px yellow';
+	draggableElem5.style.border = 'dashed 1px yellow';
 	conukuran5.style = 'display';
 	conputar5.style = 'display';
 };

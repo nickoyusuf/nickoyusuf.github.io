@@ -827,8 +827,8 @@ const ukuran = document.getElementById('input-size');
 ukuran.addEventListener('input',function() {
 	const y = ukuran.value;
 	const z = ukuran.value;
-	draggableElem.style.width = + y +'%';
-	draggableElem.style.height = + z +'%';
+	draggableElem.style.width = + y +'px';
+	draggableElem.style.height = + z +'px';
    // console.log(ukuran.value);
 });
 
@@ -852,8 +852,8 @@ const ukuran2 = document.getElementById('input-size2');
 ukuran2.addEventListener('input',function() {
 	const y = ukuran2.value;
 	const z = ukuran2.value;
-	draggableElem2.style.width = + y +'%';
-	draggableElem2.style.height = + z +'%';
+	draggableElem2.style.width = + y +'px';
+	draggableElem2.style.height = + z +'px';
    // console.log(ukuran.value);
 });
 
@@ -878,8 +878,8 @@ const ukuran3 = document.getElementById('input-size3');
 ukuran3.addEventListener('input',function() {
 	const y = ukuran3.value;
 	const z = ukuran3.value;
-	draggableElem3.style.width = + y +'%';
-	draggableElem3.style.height = + z +'%';
+	draggableElem3.style.width = + y +'px';
+	draggableElem3.style.height = + z +'px';
    // console.log(ukuran.value);
 });
 
@@ -904,8 +904,8 @@ const ukuran4 = document.getElementById('input-size4');
 ukuran4.addEventListener('input',function() {
 	const y = ukuran4.value;
 	const z = ukuran4.value;
-	draggableElem4.style.width = + y +'%';
-	draggableElem4.style.height = + z +'%';
+	draggableElem4.style.width = + y +'px';
+	draggableElem4.style.height = + z +'px';
    // console.log(ukuran.value);
 });
 
@@ -929,8 +929,8 @@ const ukuran5 = document.getElementById('input-size5');
 ukuran5.addEventListener('input',function() {
 	const y = ukuran5.value;
 	const z = ukuran5.value;
-	draggableElem5.style.width = + y +'%';
-	draggableElem5.style.height = + z +'%';
+	draggableElem5.style.width = + y +'px';
+	draggableElem5.style.height = + z +'px';
    // console.log(ukuran.value);
 });
 

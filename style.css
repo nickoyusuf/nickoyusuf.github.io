@@ -63,12 +63,12 @@
     #btnpolo {
         position: absolute;
         bottom: 1%;
-        left: 5%;
+        left: 4%;
     }
      #btntopi {
         position: absolute;
         bottom: 1%;
-        left: 5%;
+        left: 4%;
     } 
 
 
@@ -87,7 +87,7 @@
     #hdcard {
         width: 100%;
     }
-    #crewtcard {
+    #crewcard {
         width: 100%;
     }
     #topicard {

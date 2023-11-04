@@ -203,7 +203,7 @@ button5.onclick =() => {
    document.getElementById("download").onclick = function(){
         //body.style.background = '#2576f7';
         // $('.navbar').hide();
-    	$('.contener_wraper').hide();
+    	//  $('.contener_wraper').hide();
     	$('#save').show();
     	$('#kembali2').show();
         $('#kembali').hide();
@@ -951,15 +951,15 @@ draggableElem5.onclick =() => {
 	conputar5.style = 'display';
 };
 
-$(document).ready(function(){
-  $("#download").click(function(){
-  	var view = document.getElementById("htmlContent");
-    $("span").html(view);
-  });
-});
+// $(document).ready(function(){
+//   $("#download").click(function(){
+//   	var view = document.getElementById("htmlContent");
+//     $("span").html(view);
+//   });
+// });
 
-var gambar = document.getElementsByClassName('imgsave')[0];
-    var save = document.getElementById('save');
+var gambar = document.getElementsByClassName('contenerkaos')[0];
+    var save = document.getElementById('download');
 
     save.addEventListener('click',()=> {
         domtoimage.toPng(gambar).then((data)=>{

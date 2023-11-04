@@ -45,16 +45,16 @@ body {
 }
 
 
-#replace {
+/* #replace {
   position: absolute;
-  width: 50%;
-  height: 100%;
+  width: 45%;
+  height: 95%;
   left: 0%;
   top:0%;
-/*  background-color: red;*/
-}
+  background-color: red;
+} */
 
-#save {
+/* #save {
   position: absolute;
   top: 50%;
   left:65%;
@@ -72,7 +72,7 @@ body {
   text-decoration: none;
   top: 30%;
   left: 20%;
-}
+} */
 #kembali2 {
   position: absolute;
   top:30%;
@@ -1086,7 +1086,7 @@ body {
   object-fit:contain;
   position: absolute;
   cursor: move;
-/*  background-color: yellow;*/
+  /* background-color: yellow; */
 }
 #gambarbg img {
   width: 100%;
@@ -1321,7 +1321,7 @@ body {
   top: 30%;
 }
   
-#save {
+/* #save {
   position: absolute;
   top:50%;
   left: 60%;
@@ -1338,7 +1338,7 @@ body {
   text-decoration: none;
   top: 30%;
   left: 20%;
-}
+} */
 
 .contener_utama {
   width: 800px;
@@ -2575,7 +2575,7 @@ body {
 /*  background-color: red;*/
 }
 
-#save {
+/* #save {
   position: absolute;
   top: 400px;
   left: 22%;
@@ -2594,7 +2594,7 @@ body {
   top: 18%;
   left: 15;
   font-size:150%;
-}
+} */
 #kembali2 {
   position: absolute;
   top:30%;

@@ -757,7 +757,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   background: green;
-  display:none; 
+  /* display:none;  */
 }
 #ordertext {
   position: absolute;
@@ -781,7 +781,7 @@ body {
 #risettext {
   position: absolute;
   top: 19%;
-  left: 5%;
+  left: 25%;
   color: white;
 }
 #downloadtext {
@@ -803,7 +803,7 @@ body {
   text-decoration: none;
   background-color: #082988;
   cursor: pointer;
-  display:none;
+  /* display:none; */
 }
 #back {
   position: absolute;
@@ -892,7 +892,7 @@ body {
   left:35%;
   background-color: salmon;
 } */
-#templet {
+/* #templet {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -904,7 +904,7 @@ body {
   position: absolute;
   left: 5%;
   top: 35%;
-}
+} */
 /* .contenerkaos img {
   width: 73%;
   height: 95%;
@@ -1021,7 +1021,30 @@ body {
   background-color: white;
 }
 
+
 #contenerputar5 {
+  position: absolute;
+  bottom: 1%;
+  right: 2%;
+  width: 95%;
+  height: 4%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+#contenerukurandesain {
+  position: absolute;
+  bottom: 6%;
+  right: 2%;
+  width: 95%;
+  height: 4%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+
+#contenerputardesain {
   position: absolute;
   bottom: 1%;
   right: 2%;
@@ -1285,6 +1308,22 @@ body {
    height: 5px;
    accent-color: yellow;
  }
+ .slider #input-sizedesain{
+  position: absolute;
+  bottom: 30%;
+  left: 20%;
+  width: 75%;
+  height: 5px;
+  accent-color: yellow;
+}
+.slider #input-rotatedesain{
+  position: absolute;
+  bottom: 30%;
+  left: 20%;
+  width: 75%;
+  height: 5px;
+  accent-color: yellow;
+}
 
 
 @media screen and (max-width: 1200px) {
@@ -1994,7 +2033,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   background: green;
-  display:none; 
+  /* display:none;  */
 }
 #ordertext {
   position: absolute;
@@ -2019,7 +2058,7 @@ body {
 #risettext {
   position: absolute;
   top: 19%;
-  left: 10%;
+  left: 30%;
   color: white;
   font-size: 90%;
 }
@@ -2043,7 +2082,7 @@ body {
   text-decoration: none;
   background-color: #082988;
   cursor: pointer;
-  display:none;
+  /* display:none; */
 }
 #back {
   position: absolute;
@@ -2132,7 +2171,7 @@ body {
   left:30%;
   background-color: salmon;
 } */
-#templet {
+/* #templet {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2144,7 +2183,7 @@ body {
   position: absolute;
   left: 5%;
   top: 20%;
-}
+} */
 /* .contenerkaos img {
   width: 90%;
   height: 95%;
@@ -2261,6 +2300,27 @@ body {
 }
 
 #contenerputar5 {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  width: 95%;
+  height: 6%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+#contenerukurandesain {
+  position: absolute;
+  bottom: 10%;
+  right: 2%;
+  width: 95%;
+  height: 6%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+#contenerputardesain {
   position: absolute;
   bottom: 2%;
   right: 2%;
@@ -2529,7 +2589,22 @@ body {
    height: 5px;
    accent-color: yellow;
  }
-
+ .slider #input-sizedesain{
+  position: absolute;
+  bottom: 40%;
+  left: 30%;
+   width: 65%;
+  height: 5px;
+  accent-color: yellow;
+}
+.slider #input-rotatedesain{
+  position: absolute;
+  bottom:40%;
+  left: 30%;
+   width: 65%;
+  height: 5px;
+  accent-color: yellow;
+}
 }
 
 
@@ -3152,7 +3227,7 @@ body {
   left:33%;
   background-color: salmon;
 } */
-  #templet {
+  /* #templet {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -3165,7 +3240,7 @@ body {
   position: absolute;
   right: 2%;
   top: 8%;
-}
+} */
 /* .contenerkaos img {
   width: 83%;
   position: absolute;
@@ -3203,7 +3278,7 @@ body {
   position: absolute;
   top: 16%;
   left: 5%;
-  width: 35%;
+  width: 25%;
   height: 10%;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -3213,7 +3288,7 @@ body {
 }
 #risettext {
   position: absolute;
-  left: 1%;
+  left: 17%;
   top: 20%;
   font-size: 18px;
 }
@@ -3496,6 +3571,29 @@ body {
   background-color: white;
   font-size: 50%;
 }
+#contenerukurandesain {
+  position: absolute;
+  bottom: -1%;
+  right: 2%;
+  width: 95%;
+  height: 10%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 50%;
+}
+
+#contenerputardesain {
+  position: absolute;
+  bottom: -13%;
+  right: 2%;
+  width: 95%;
+  height: 10%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 50%;
+}
 #kembali {
   position: absolute;
   top:30%;
@@ -3609,5 +3707,21 @@ body {
    height: 5px;
    accent-color: yellow;
  }
+ .slider #input-sizedesain{
+  position: absolute;
+  bottom: 30%;
+  left: 4%;
+  width: 90%;
+  height: 5px;
+  accent-color:yellow;
+}
+.slider #input-rotatedesain{
+  position: absolute;
+  bottom: 30%;
+  left: 4%;
+  width: 90%;
+  height: 5px;
+  accent-color: yellow;
+}
   
 }

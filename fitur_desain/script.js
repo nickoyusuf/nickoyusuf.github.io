@@ -7,12 +7,12 @@ colorinput.addEventListener('input',()=> {
 let back = document.getElementById('back');
 let front = document.getElementById('front');
 back.addEventListener('click',()=> {
-	document.getElementById("kaos").src = "back.png";
+	document.getElementById("kaos").src = "../back.png";
 	back.style.display = 'none';
 	front.style = 'display';
 });
 front.addEventListener('click',()=> {
-	document.getElementById("kaos").src = "front.png";
+	document.getElementById("kaos").src = "../front.png";
 	front.style.display = 'none';
 	back.style = 'display';
 });
@@ -142,10 +142,11 @@ let file;
 
 const latar = document.getElementById('gambarbg');
 
-let templet = document.getElementById('templet');
+//let templet = document.getElementById('templet');
 
 let wraper_editor = document.querySelector('.wraper_editor');
 wraper_editor.onclick =() => {
+	draggableElemdesain.style.border = 'none';
 	draggableElem5.style.border = 'none';
 	draggableElem4.style.border = 'none';
 	draggableElem3.style.border = 'none';
@@ -156,6 +157,7 @@ wraper_editor.onclick =() => {
 
 let download = document.getElementById('download');
 download.onclick =() => {
+	draggableElemdesain.style.border = 'none';
 	draggableElem5.style.border = 'none';
 	draggableElem4.style.border = 'none';
 	draggableElem3.style.border = 'none';
@@ -197,16 +199,17 @@ button5.onclick =() => {
 	input5.click();
 	button5.style.display = 'none';
 	//$('.loader').show();
-    templet.style.display = 'none';
-    $('#order').show();
-	$('#download').show();
+   // templet.style.display = 'none';
+    // $('#order').show();
+	// $('#download').show();
    document.getElementById("download").onclick = function(){
         //body.style.background = '#2576f7';
         // $('.navbar').hide();
     	//  $('.contener_wraper').hide();
-    	$('#save').show();
+    	//$('#save').show();
     	$('#kembali2').show();
         $('#kembali').hide();
+		draggableElemdesain.style.border = 'none';
         draggableElem5.style.border = 'none';
 	    draggableElem4.style.border = 'none';
 	    draggableElem3.style.border = 'none';
@@ -251,6 +254,9 @@ input5.addEventListener('change',function() {
 					diplayFiles5();
 					//$('.loader').hide();
 })
+
+
+
 
 
 inputbg.addEventListener('change',function() {
@@ -417,7 +423,7 @@ function diplayFilesbg() {
   }
 
 
-
+let draggableElemdesain = document.getElementById("desain");
 let draggableElem5 = document.getElementById("load5");
 let draggableElem4 = document.getElementById("load4");
 let draggableElem3 = document.getElementById("load3");
@@ -457,11 +463,49 @@ const isTouchDevice = () => {
 isTouchDevice();
 
 //Start (mouse down / touch start)
+
+draggableElemdesain.addEventListener(events[deviceType].down, (e) => {
+	e.preventDefault();
+	//initial x and y points
+	initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
+	initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+	draggableElem5.style.border = 'none';
+	conukuran5.style.display = 'none';
+	conputar5.style.display = 'none';
+
+	draggableElem4.style.border = 'none';
+	conukuran4.style.display = 'none';
+	conputar4.style.display = 'none';
+	
+	draggableElem3.style.border = 'none';
+	conukuran3.style.display = 'none';
+	conputar3.style.display = 'none';
+	
+	draggableElem2.style.border = 'none';
+	conukuran2.style.display = 'none';
+	conputar2.style.display = 'none';
+	
+	draggableElem.style.border = 'none';
+	conukuran.style.display = 'none';
+	conputar.style.display = 'none';
+	
+	draggableElemdesain.style.border = 'dashed 1px yellow';
+	// conukuran5.style = 'display';
+	// conputar5.style = 'display';
+	//Start movement
+	
+	moveElement = true;
+  });
+
 draggableElem5.addEventListener(events[deviceType].down, (e) => {
   e.preventDefault();
   //initial x and y points
   initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
   initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+  draggableElemdesain.style.border = 'none';
+  conukurandesain.style.display = 'none';
+  conputardesain.style.display = 'none';
+
   draggableElem4.style.border = 'none';
   conukuran4.style.display = 'none';
   conputar4.style.display = 'none';
@@ -491,6 +535,9 @@ draggableElem4.addEventListener(events[deviceType].down, (e) => {
   //initial x and y points
   initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
   initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+  draggableElemdesain.style.border = 'none';
+  conukurandesain.style.display = 'none';
+  conputardesain.style.display = 'none';
   
   draggableElem5.style.border = 'none';
   conukuran5.style.display = 'none';
@@ -521,6 +568,10 @@ draggableElem3.addEventListener(events[deviceType].down, (e) => {
   //initial x and y points
   initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
   initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+  draggableElemdesain.style.border = 'none';
+  conukurandesain.style.display = 'none';
+  conputardesain.style.display = 'none';
+
   draggableElem5.style.border = 'none';
   conukuran5.style.display = 'none';
   conputar5.style.display = 'none';
@@ -549,6 +600,10 @@ draggableElem2.addEventListener(events[deviceType].down, (e) => {
   //initial x and y points
   initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
   initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+  draggableElemdesain.style.border = 'none';
+  conukurandesain.style.display = 'none';
+  conputardesain.style.display = 'none';
+
   draggableElem5.style.border = 'none';
   conukuran5.style.display = 'none';
   conputar5.style.display = 'none';
@@ -577,6 +632,10 @@ draggableElem.addEventListener(events[deviceType].down, (e) => {
   //initial x and y points
   initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
   initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+  draggableElemdesain.style.border = 'none';
+  conukurandesain.style.display = 'none';
+  conputardesain.style.display = 'none';
+
   draggableElem5.style.border = 'none';
   conukuran5.style.display = 'none';
   conputar5.style.display = 'none';
@@ -601,6 +660,22 @@ draggableElem.addEventListener(events[deviceType].down, (e) => {
 });
 
 //Move
+
+draggableElemdesain.addEventListener(events[deviceType].move, (e) => {
+	//if movement == true then set top and left to new X andY while removing any offset
+	if (moveElement) {
+	  e.preventDefault();
+	  let newX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
+	  let newY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+	  draggableElemdesain.style.top =
+		draggableElemdesain.offsetTop - (initialY - newY) + "px";
+	  draggableElemdesain.style.left =
+		draggableElemdesain.offsetLeft - (initialX - newX) + "px";
+	  initialX = newX;
+	  initialY = newY;
+	}
+  });
+
 draggableElem5.addEventListener(events[deviceType].move, (e) => {
   //if movement == true then set top and left to new X andY while removing any offset
   if (moveElement) {
@@ -677,6 +752,18 @@ draggableElem.addEventListener(events[deviceType].move, (e) => {
 });
 
 //mouse up / touch end
+
+draggableElemdesain.addEventListener(
+	events[deviceType].up,
+	(stopMovement = (e) => {
+	  moveElement = false;
+	})
+  );
+  draggableElemdesain.addEventListener("mouseleave", stopMovement);
+  draggableElemdesain.addEventListener(events[deviceType].up, (e) => {
+	moveElement = false;
+  });
+
 draggableElem5.addEventListener(
   events[deviceType].up,
   (stopMovement = (e) => {
@@ -850,6 +937,22 @@ putar5.addEventListener('input',function() {
    // console.log(putar.value);
 });
 
+const ukurandesain = document.getElementById('input-sizedesain');
+ukurandesain.addEventListener('input',function() {
+	const y = ukurandesain.value;
+	const z = ukurandesain.value;
+	draggableElemdesain.style.width = + y +'px';
+	draggableElemdesain.style.height = + z +'px';
+   // console.log(ukuran.value);
+});
+
+const putardesain = document.getElementById('input-rotatedesain');
+putardesain.addEventListener('input',function() {
+	const x = putardesain.value;
+	draggableElemdesain.style.transform = 'rotate('+ x +'deg)';
+   // console.log(putar.value);
+});
+
 const conukuran5 = document.querySelector('#contenerukuran5');
 const conputar5 = document.querySelector('#contenerputar5');
 
@@ -860,13 +963,23 @@ draggableElem5.onclick =() => {
 	conputar5.style = 'display';
 };
 
-$(document).ready(function(){
-  $("#klk").click(function(){
-  	var view = document.getElementById("#rpl");
-    $("#drag-area").html(view);
-	$('#rpl').show();
-  });
-});
+const conukurandesain = document.querySelector('#contenerukurandesain');
+const conputardesain = document.querySelector('#contenerputardesain');
+
+draggableElemdesain.onclick =() => {
+	
+	draggableElemdesain.style.border = 'dashed 1px yellow';
+	conukurandesain.style = 'display';
+	conputardesain.style = 'display';
+};
+
+// $(document).ready(function(){
+//   $("#klk").click(function(){
+//   	var view = document.getElementById("#rpl");
+//     $("#drag-area").html(view);
+// 	$('#rpl').show();
+//   });
+// });
 
 var gambar = document.getElementsByClassName('contenerkaos')[0];
 var save = document.getElementById('download');

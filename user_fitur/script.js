@@ -214,6 +214,7 @@ button5.onclick =() => {
 	    draggableElem.style.border = 'none';
     	//window.print();
  	//alert("anda belum mendaftar atau login silahkan untuk daftar atau login dahulu!!");
+	 alert("download berhasil.. silahkan cek galeri atau file manager");
  }
 }
 

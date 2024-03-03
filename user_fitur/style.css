@@ -1038,7 +1038,7 @@ body {
   height: 100%;
 /*  background-color: sandybrown;*/
 }
-#load1.load {
+#load.load {
 /* border: 1px solid yellow;*/
   position: absolute;
   width: 100%;
@@ -1099,7 +1099,7 @@ body {
 
 .button {
   position: absolute;
-  top: 1%;
+  top: 83%;
   left: 3%;
   width: 30%;
   height: 5%;
@@ -2277,7 +2277,7 @@ body {
   height: 100%;
 /*  background-color: sandybrown;*/
 }
-#load1.load {
+#load.load {
 /* border: 1px solid yellow;*/
   position: absolute;
   width: 100%;

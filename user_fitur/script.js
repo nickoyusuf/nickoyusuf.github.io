@@ -94,19 +94,19 @@ document.getElementById("coklat").onclick = function(){
 	document.getElementById("svg").style.fill = "#472114";
 }
 document.getElementById("bghitam").onclick = function(){
-    document.querySelector(".contenerkaos").style.backgroundImage = "linear-gradient(to bottom right, white, black)";
+    document.querySelector(".contenerkaos").style.backgroundImage = "radial-gradient(white, black)";
  }
 document.getElementById("bgputih").onclick = function(){
-	document.querySelector(".contenerkaos").style.backgroundImage = "linear-gradient(to bottom right, white, white)";
+	document.querySelector(".contenerkaos").style.backgroundImage = "radial-gradient(white, white)";
 }
 document.getElementById("bgbiru").onclick = function(){
-	document.querySelector(".contenerkaos").style.backgroundImage = "linear-gradient(to bottom right, white, blue)";
+	document.querySelector(".contenerkaos").style.backgroundImage = "radial-gradient(white, blue)";
 }
 document.getElementById("bgmerah").onclick = function(){
-	document.querySelector(".contenerkaos").style.backgroundImage = "linear-gradient(to bottom right, white, red)";
+	document.querySelector(".contenerkaos").style.backgroundImage = "radial-gradient(white, red)";
 }
 document.getElementById("bghijau").onclick = function(){
-	document.querySelector(".contenerkaos").style.backgroundImage = "linear-gradient(to bottom right, white, green)";
+	document.querySelector(".contenerkaos").style.backgroundImage = "radial-gradient(white, green)";
 }
 document.getElementById("bgtf").onclick = function(){
 	document.querySelector(".contenerkaos").style.background = "none";

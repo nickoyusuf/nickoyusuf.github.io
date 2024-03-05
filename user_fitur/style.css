@@ -744,7 +744,7 @@ body {
   left:2.5%;
   position: absolute;
   background-color: white;
-  background-image: linear-gradient(to bottom right, white, skyblue);
+  background-image: radial-gradient(white, skyblue);
   overflow: hidden;
 }
 #order {
@@ -1981,8 +1981,6 @@ body {
   top:0.5%;
   left:2.5%;
   position: absolute;
-  background-color: white;
-  background-image: linear-gradient(to bottom right, white, skyblue);
   overflow: hidden;
 }
 #order {

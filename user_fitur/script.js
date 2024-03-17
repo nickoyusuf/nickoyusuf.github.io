@@ -117,18 +117,24 @@ const dragArea2 = document.querySelector('.gambar2');
 const dragArea3 = document.querySelector('.gambar3');
 const dragArea4 = document.querySelector('.gambar4');
 const dragArea5 = document.querySelector('.gambar5');
+const dragArea6 = document.querySelector('.gambar6');
+const dragArea7 = document.querySelector('.gambar7');
 
 const load = document.getElementById('load');
 const load2 = document.getElementById('load2');
 const load3 = document.getElementById('load3');
 const load4 = document.getElementById('load4');
 const load5 = document.getElementById('load5');
+const load6 = document.getElementById('load6');
+const load7 = document.getElementById('load7');
 
 let button = document.querySelector('.button');
 let button2 = document.querySelector('.button2');
 let button3 = document.querySelector('.button3');
 let button4 = document.querySelector('.button4');
 let button5 = document.querySelector('.button5');
+let button6 = document.querySelector('.button6');
+let button7 = document.querySelector('.button7');
 let buttonbg = document.querySelector('.buttonbg');
 
 let input = document.getElementById('file-input');
@@ -136,6 +142,8 @@ let input2 = document.getElementById('file-input2');
 let input3 = document.getElementById('file-input3');
 let input4 = document.getElementById('file-input4');
 let input5 = document.getElementById('file-input5');
+let input6 = document.getElementById('file-input6');
+let input7 = document.getElementById('file-input7');
 let inputbg = document.getElementById('file-inputbg');
 
 let file;
@@ -146,6 +154,8 @@ let templet = document.getElementById('templet');
 
 let wraper_editor = document.querySelector('.wraper_editor');
 wraper_editor.onclick =() => {
+	draggableElem7.style.border = 'none';
+	draggableElem6.style.border = 'none';
 	draggableElem5.style.border = 'none';
 	draggableElem4.style.border = 'none';
 	draggableElem3.style.border = 'none';
@@ -156,6 +166,8 @@ wraper_editor.onclick =() => {
 
 let download = document.getElementById('download');
 download.onclick =() => {
+	draggableElem7.style.border = 'none';
+	draggableElem6.style.border = 'none';
 	draggableElem5.style.border = 'none';
 	draggableElem4.style.border = 'none';
 	draggableElem3.style.border = 'none';
@@ -165,6 +177,8 @@ download.onclick =() => {
 
 let order = document.getElementById('order');
 order.onclick =() => {
+	draggableElem7.style.border = 'none';
+	draggableElem6.style.border = 'none';
 	draggableElem5.style.border = 'none';
 	draggableElem4.style.border = 'none';
 	draggableElem3.style.border = 'none';
@@ -196,6 +210,14 @@ button4.onclick =() => {
 button5.onclick =() => {
 	input5.click();
 	button5.style.display = 'none';
+}
+button6.onclick =() => {
+	input6.click();
+	button6.style.display = 'none';
+}
+button7.onclick =() => {
+	input7.click();
+	button7.style.display = 'none';
 	//$('.loader').show();
     templet.style.display = 'none';
     $('#order').show();
@@ -207,6 +229,8 @@ button5.onclick =() => {
     	$('#save').show();
     	$('#kembali2').show();
         $('#kembali').hide();
+		draggableElem7.style.border = 'none';
+		draggableElem6.style.border = 'none';
         draggableElem5.style.border = 'none';
 	    draggableElem4.style.border = 'none';
 	    draggableElem3.style.border = 'none';
@@ -251,6 +275,18 @@ input5.addEventListener('change',function() {
 					load5.classList.add('load');
 					diplayFiles5();
 					//$('.loader').hide();
+})
+input6.addEventListener('change',function() {
+	file = this.files[0];
+	load6.classList.add('load');
+	diplayFiles6();
+	//$('.loader').hide();
+})
+input7.addEventListener('change',function() {
+	file = this.files[0];
+	load7.classList.add('load');
+	diplayFiles7();
+	//$('.loader').hide();
 })
 
 
@@ -390,6 +426,58 @@ function diplayFiles() {
 								//console.log('the file is dropped in drag area');
   }
 
+  function diplayFiles6() {
+	let fileType = file.type;
+	//console.log(fileType);
+
+	let validExtension = ['image/jpg','image/png','image/jpeg'];
+	if (validExtension.includes(fileType)) {
+					  let fileReader = new FileReader();
+
+					  fileReader.onload = () => {
+						let fileURL =fileReader.result;
+						//console.log(fileURL);
+						let imgTag = `<img src= ${fileURL} alt="file hilang">`;
+						dragArea6.innerHTML = imgTag;
+					  };
+
+
+					  fileReader.readAsDataURL(file);
+
+
+	} else {
+					alert("yang anda masukan bukan gambar");
+					
+				  }
+				//console.log('the file is dropped in drag area');
+}
+
+function diplayFiles7() {
+	let fileType = file.type;
+	//console.log(fileType);
+
+	let validExtension = ['image/jpg','image/png','image/jpeg'];
+	if (validExtension.includes(fileType)) {
+					  let fileReader = new FileReader();
+
+					  fileReader.onload = () => {
+						let fileURL =fileReader.result;
+						//console.log(fileURL);
+						let imgTag = `<img src= ${fileURL} alt="file hilang">`;
+						dragArea7.innerHTML = imgTag;
+					  };
+
+
+					  fileReader.readAsDataURL(file);
+
+
+	} else {
+					alert("yang anda masukan bukan gambar");
+					
+				  }
+				//console.log('the file is dropped in drag area');
+}
+
 
 function diplayFilesbg() {
 					let fileType = file.type;
@@ -417,8 +505,8 @@ function diplayFilesbg() {
 								//console.log('the file is dropped in drag area');
   }
 
-
-
+let draggableElem7 = document.getElementById("load7");
+let draggableElem6 = document.getElementById("load6");
 let draggableElem5 = document.getElementById("load5");
 let draggableElem4 = document.getElementById("load4");
 let draggableElem3 = document.getElementById("load3");
@@ -458,11 +546,97 @@ const isTouchDevice = () => {
 isTouchDevice();
 
 //Start (mouse down / touch start)
+draggableElem7.addEventListener(events[deviceType].down, (e) => {
+	e.preventDefault();
+	//initial x and y points
+	initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
+	initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+    draggableElem6.style.border = 'none';
+	conukuran6.style.display = 'none';
+	conputar6.style.display = 'none';
+
+
+    draggableElem5.style.border = 'none';
+	conukuran5.style.display = 'none';
+	conputar5.style.display = 'none';
+
+	draggableElem4.style.border = 'none';
+	conukuran4.style.display = 'none';
+	conputar4.style.display = 'none';
+	
+	draggableElem3.style.border = 'none';
+	conukuran3.style.display = 'none';
+	conputar3.style.display = 'none';
+	
+	draggableElem2.style.border = 'none';
+	conukuran2.style.display = 'none';
+	conputar2.style.display = 'none';
+	
+	draggableElem.style.border = 'none';
+	conukuran.style.display = 'none';
+	conputar.style.display = 'none';
+	
+	draggableElem7.style.border = 'dashed 1px yellow';
+	conukuran7.style = 'display';
+	conputar7.style = 'display';
+	//Start movement
+	
+	moveElement = true;
+  });
+
+draggableElem6.addEventListener(events[deviceType].down, (e) => {
+	e.preventDefault();
+	//initial x and y points
+	initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
+	initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+    draggableElem7.style.border = 'none';
+	conukuran7.style.display = 'none';
+	conputar7.style.display = 'none';
+
+
+    draggableElem5.style.border = 'none';
+	conukuran5.style.display = 'none';
+	conputar5.style.display = 'none';
+
+	draggableElem4.style.border = 'none';
+	conukuran4.style.display = 'none';
+	conputar4.style.display = 'none';
+	
+	draggableElem3.style.border = 'none';
+	conukuran3.style.display = 'none';
+	conputar3.style.display = 'none';
+	
+	draggableElem2.style.border = 'none';
+	conukuran2.style.display = 'none';
+	conputar2.style.display = 'none';
+	
+	draggableElem.style.border = 'none';
+	conukuran.style.display = 'none';
+	conputar.style.display = 'none';
+	
+	draggableElem6.style.border = 'dashed 1px yellow';
+	conukuran6.style = 'display';
+	conputar6.style = 'display';
+	//Start movement
+	
+	moveElement = true;
+  });
+
+//Start (mouse down / touch start)
 draggableElem5.addEventListener(events[deviceType].down, (e) => {
   e.preventDefault();
   //initial x and y points
   initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
   initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+    draggableElem7.style.border = 'none';
+	conukuran7.style.display = 'none';
+	conputar7.style.display = 'none';
+
+
+  draggableElem6.style.border = 'none';
+  conukuran6.style.display = 'none';
+  conputar6.style.display = 'none';
+
   draggableElem4.style.border = 'none';
   conukuran4.style.display = 'none';
   conputar4.style.display = 'none';
@@ -492,7 +666,14 @@ draggableElem4.addEventListener(events[deviceType].down, (e) => {
   //initial x and y points
   initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
   initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
-  
+  draggableElem7.style.border = 'none';
+  conukuran7.style.display = 'none';
+  conputar7.style.display = 'none';
+
+  draggableElem6.style.border = 'none';
+  conukuran6.style.display = 'none';
+  conputar6.style.display = 'none';
+
   draggableElem5.style.border = 'none';
   conukuran5.style.display = 'none';
   conputar5.style.display = 'none';
@@ -522,6 +703,14 @@ draggableElem3.addEventListener(events[deviceType].down, (e) => {
   //initial x and y points
   initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
   initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+  draggableElem7.style.border = 'none';
+  conukuran7.style.display = 'none';
+  conputar7.style.display = 'none';
+
+  draggableElem6.style.border = 'none';
+  conukuran6.style.display = 'none';
+  conputar6.style.display = 'none';
+
   draggableElem5.style.border = 'none';
   conukuran5.style.display = 'none';
   conputar5.style.display = 'none';
@@ -550,6 +739,15 @@ draggableElem2.addEventListener(events[deviceType].down, (e) => {
   //initial x and y points
   initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
   initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+  draggableElem7.style.border = 'none';
+  conukuran7.style.display = 'none';
+  conputar7.style.display = 'none';
+
+
+  draggableElem6.style.border = 'none';
+  conukuran6.style.display = 'none';
+  conputar6.style.display = 'none';
+
   draggableElem5.style.border = 'none';
   conukuran5.style.display = 'none';
   conputar5.style.display = 'none';
@@ -578,6 +776,14 @@ draggableElem.addEventListener(events[deviceType].down, (e) => {
   //initial x and y points
   initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
   initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+  draggableElem7.style.border = 'none';
+  conukuran7.style.display = 'none';
+  conputar7.style.display = 'none';
+
+  draggableElem6.style.border = 'none';
+  conukuran6.style.display = 'none';
+  conputar6.style.display = 'none';
+
   draggableElem5.style.border = 'none';
   conukuran5.style.display = 'none';
   conputar5.style.display = 'none';
@@ -600,6 +806,37 @@ draggableElem.addEventListener(events[deviceType].down, (e) => {
   //Start movement
   moveElement = true;
 });
+
+//Move
+draggableElem7.addEventListener(events[deviceType].move, (e) => {
+	//if movement == true then set top and left to new X andY while removing any offset
+	if (moveElement) {
+	  e.preventDefault();
+	  let newX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
+	  let newY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+	  draggableElem7.style.top =
+		draggableElem7.offsetTop - (initialY - newY) + "px";
+	  draggableElem7.style.left =
+		draggableElem7.offsetLeft - (initialX - newX) + "px";
+	  initialX = newX;
+	  initialY = newY;
+	}
+  });
+//Move
+draggableElem6.addEventListener(events[deviceType].move, (e) => {
+	//if movement == true then set top and left to new X andY while removing any offset
+	if (moveElement) {
+	  e.preventDefault();
+	  let newX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
+	  let newY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+	  draggableElem6.style.top =
+		draggableElem6.offsetTop - (initialY - newY) + "px";
+	  draggableElem6.style.left =
+		draggableElem6.offsetLeft - (initialX - newX) + "px";
+	  initialX = newX;
+	  initialY = newY;
+	}
+  });
 
 //Move
 draggableElem5.addEventListener(events[deviceType].move, (e) => {
@@ -678,6 +915,28 @@ draggableElem.addEventListener(events[deviceType].move, (e) => {
 });
 
 //mouse up / touch end
+draggableElem7.addEventListener(
+	events[deviceType].up,
+	(stopMovement = (e) => {
+	  moveElement = false;
+	})
+  );
+  draggableElem7.addEventListener("mouseleave", stopMovement);
+  draggableElem7.addEventListener(events[deviceType].up, (e) => {
+	moveElement = false;
+  });
+
+draggableElem6.addEventListener(
+	events[deviceType].up,
+	(stopMovement = (e) => {
+	  moveElement = false;
+	})
+  );
+  draggableElem6.addEventListener("mouseleave", stopMovement);
+  draggableElem6.addEventListener(events[deviceType].up, (e) => {
+	moveElement = false;
+  });
+
 draggableElem5.addEventListener(
   events[deviceType].up,
   (stopMovement = (e) => {
@@ -854,11 +1113,56 @@ putar5.addEventListener('input',function() {
 const conukuran5 = document.querySelector('#contenerukuran5');
 const conputar5 = document.querySelector('#contenerputar5');
 
-draggableElem5.onclick =() => {
+const ukuran6 = document.getElementById('input-size6');
+ukuran6.addEventListener('input',function() {
+	const y = ukuran6.value;
+	const z = ukuran6.value;
+	draggableElem6.style.width = + y +'px';
+	draggableElem6.style.height = + z +'px';
+   // console.log(ukuran.value);
+});
+
+const putar6 = document.getElementById('input-rotate6');
+putar6.addEventListener('input',function() {
+	const x = putar6.value;
+	draggableElem6.style.transform = 'rotate('+ x +'deg)';
+   // console.log(putar.value);
+});
+
+const conukuran6 = document.querySelector('#contenerukuran6');
+const conputar6 = document.querySelector('#contenerputar6');
+
+draggableElem6.onclick =() => {
 	
-	draggableElem5.style.border = 'dashed 1px yellow';
-	conukuran5.style = 'display';
-	conputar5.style = 'display';
+	draggableElem6.style.border = 'dashed 1px yellow';
+	conukuran6.style = 'display';
+	conputar6.style = 'display';
+};
+
+const ukuran7 = document.getElementById('input-size7');
+ukuran7.addEventListener('input',function() {
+	const y = ukuran7.value;
+	const z = ukuran7.value;
+	draggableElem7.style.width = + y +'px';
+	draggableElem7.style.height = + z +'px';
+   // console.log(ukuran.value);
+});
+
+const putar7 = document.getElementById('input-rotate7');
+putar7.addEventListener('input',function() {
+	const x = putar7.value;
+	draggableElem7.style.transform = 'rotate('+ x +'deg)';
+   // console.log(putar.value);
+});
+
+const conukuran7 = document.querySelector('#contenerukuran7');
+const conputar7 = document.querySelector('#contenerputar7');
+
+draggableElem7.onclick =() => {
+	
+	draggableElem7.style.border = 'dashed 1px yellow';
+	conukuran7.style = 'display';
+	conputar7.style = 'display';
 };
 
 $(document).ready(function(){

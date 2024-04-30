@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A5</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        #a5{
+            background-color: yellowgreen;
+        }
+        .canvascontainer {
+            position: absolute;
+            left: 250px;
+            top: 200px;
+            /* background-color: blueviolet; */
+           }
+        #canvas {
+            /* zoom: 30%; */
+            /* position: relative;
+            top: 60%; */
+            position: absolute;
+            border: black solid 1px;
+            /* left: 10%; */
+        }
+        .container1 {
+            height: 125%;
+        }
+        .container2 {
+            height: 125%;
+        }
+        @media screen and (max-width: 1200px) {
+          .canvascontainer {
+            position: absolute;
+            top: 250px;
+            left: 180px;
+            /* background-color: blueviolet; */
+           }
+           .container1 {
+            height: 100%;
+            }
+            .container2 {
+                height: 100%;
+            }
+        
+        }
+        @media screen and (max-width: 760px) {
+          .canvascontainer {
+            position: absolute;
+            top: 270px;
+            left: 40px;
+            zoom: 70%;
+            /* background-color: blueviolet; */
+           }
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <!-- <a href="" id="kembali">
+          <p id="kembalitext">Kembali</p>
+       </a> -->
+       
+       <a href="" id="home">Home <i class="fas fa-home"></i></a>
+       <!--<a href="../../auth/registration" id="daftar">Daftar</a>
+       <a href="../../auth/login" id="login">Login</a>-->
+   </div>
+
+    <div class="container1">
+        <br>
+        <a href="dtf.html">
+            <div id="dtf">
+                <h3 id="dtftext">DTF</h3>
+            </div>
+        </a>
+        <a href="a3.html">
+            <div id="a3">
+                <h3 id="a3text">A3</h3>
+            </div>
+        </a>
+        <a href="a4.html">
+            <div id="a4">
+                <h3 id="a4text">A4</h3>
+            </div>
+        </a>
+        <a href="a5.html">
+            <div id="a5">
+                <h3 id="a5text">A5</h3>
+            </div>
+        </a>
+        <a href="index.html">
+            <div id="a6">
+                <h3 id="a6text">A6</h3>
+            </div>
+        </a>
+        <br>
+        
+            <div class="color">
+                <label for="">Warna: </label>
+                <input type="color" value="#752BFF" id="color">
+            </div>
+             <div class="width">
+                <label>Lebar</label>
+                <input type="number" id="lebar">
+              </div>
+              
+              <div class="height">
+                <label>Panjang</label>
+                <input type="number" id="tinggi">
+              </div>
+              <div class="ratio">
+                <input type="checkbox" id="ratio" checked>
+                <label for="ratio">Lock</label>
+              </div>
+              <div class="font">
+                <label for="font-family">Font: </label>
+                <select id="font-family">
+                    <!-- <option value="Times New Roman" selected>Times New Roman</option>
+                    <option value="Pacifico">Pacifico</option>
+                    <option value="VT323">VT323</option>
+                    <option value="Quicksand">Quicksand</option>
+                    <option value="Inconsolata">Inconsolata</option> -->
+                </select>
+              </div>
+
+        
+        <div class="judul">
+          <h3>14,8cm x 21cm</h3>
+        </div>
+        <div class="canvascontainer">
+            <canvas id="canvas" class="cvs" width="420" height="595"></canvas>
+        </div>
+</div>
+
+<div class="container2">
+    <div class="wraper">
+        <div class="input">
+            <p class="uploadtext">UPLOAD</p>
+            <input class="inputImg" id="myImg" type="file" accept="image/*">
+        </div>
+        <div class="square" onclick="createRect(canvas)"></div>
+        <div class="circle" onclick="createCirc(canvas)"></div>
+        <div class="text" onclick="AddText(canvas)"><h3>Text</h3></div>
+        <!-- <div class="pencil"><img src="img/pencil.png" alt="" width="35px"></div> -->
+        <div class="save" id="download">
+            <p class="savetext">SIMPAN</p>
+        </div>
+    </div>  
+</div>
+    
+<script src="lib/fabric.min.js"></script>
+<script src="index.js"></script>
+<script src="http://rawgit.com/bramstein/fontfaceobserver/master/fontfaceobserver.js" ></script>
+<!-- <script>
+    const canvas = new fabric.Canvas('canvas',{
+        width: fabric.util.parseUnit('14.8cm'),
+        height: fabric.util.parseUnit('21cm'),
+});
+</script> -->
+</html>

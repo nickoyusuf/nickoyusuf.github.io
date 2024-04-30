@@ -1,0 +1,761 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|VT323|Quicksand|Inconsolata');
+/* @import url(https://fonts.googleapis.com/css?family=Times+New+Roman);
+@import url(https://fonts.googleapis.com/css?family=Pacifico); */
+body {
+    /* zoom :30%; */
+    /* max-width: max-content; */
+    margin: auto;
+    padding: 0%;
+}
+.container1 {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-image: radial-gradient(white, skyblue);
+    left: 20%;
+}
+.controls {
+    display: inline-block;
+}
+.navbar {
+    background-color: #0e68f8;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 0%;
+    z-index: 999;
+  }
+  #home {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    right: 5%;
+    top: 30%;
+  }
+  #kembali {
+    position: absolute;
+    top:1%;
+    left:3%;
+    /*width: 20%;
+    height: 5%;
+    border: 1px solid #ccc;
+    border-radius: 5px;*/
+    text-decoration: none;
+    cursor: pointer;
+    /* display: none; */
+  /*  background: #082988;*/
+  }
+  #kembalitext {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    color: white;
+  }
+#dtf {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: 80px;
+    right: 80%;
+    background-color:blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#dtftext{
+    position: absolute;
+    top: -50%;
+    left: 35%;
+    color: aliceblue;
+}
+#a3 {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: 80px;
+    right: 65%;
+    background-color:blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#a3text{
+    position: absolute;
+    top: -50%;
+    left: 40%;
+    color: aliceblue;
+}
+#a4 {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: 80px;
+    right: 50%;
+    background-color:blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#a4text{
+    position: absolute;
+    top: -50%;
+    left: 40%;
+    color: aliceblue;
+}
+#a5 {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: 80px;
+    right: 35%;
+    background-color:blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#a5text{
+    position: absolute;
+    top: -50%;
+    left: 40%;
+    color: aliceblue;
+}
+#a6 {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: 80px;
+    right: 20%;
+    background-color:blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#a6text{
+    position: absolute;
+    top: -50%;
+    left: 40%;
+    color: aliceblue;
+}
+.inputImg {
+    display: none;
+}
+.font {
+    position: absolute;
+    right: 10%;
+    top: 135px;
+}
+.height {
+    position: absolute;
+    right: 36%;
+    top: 135px;
+}
+.width {
+    position: absolute;
+    right: 58%;
+    top: 135px;
+}
+.ratio {
+    position: absolute;
+    right: 30%;
+    top: 135px;
+}
+.color {
+    position: absolute;
+    right: 80%;
+    top: 135px;
+}
+.judul {
+    position: absolute;
+    right: 550px;
+    top: 160px;
+}
+
+
+.container2 {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    top: 0%;
+    background-color: #2576f7;
+    left: 0%;
+}
+.wraper {
+    position: absolute;
+    width: 50%;
+    height: 500px;
+    top: 50px;
+    left: 70px;
+    /* background-color: red; */
+}
+.input {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    width: 90px;
+    height: 30px;
+    /* left: 10%; */
+    background-color: blue;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.uploadtext{
+    position: absolute;
+    top: -25%;
+    left: 5%;
+    color: white;
+}
+.save {
+    position: absolute;
+    left: 20%;
+    top: 60%;
+    width: 90px;
+    height: 30px;
+    /* right: 10%; */
+    background-color: blue;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.savetext{
+    position: absolute;
+    top: -25%;
+    left: 5%;
+    color: white;
+}
+.square {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 20%;
+    left: 40%;
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+.circle {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    top: 35%;
+    left: 40%;
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+.text {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    cursor: pointer;
+    color: antiquewhite;
+}
+.pencil {
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        top: 0%;
+        z-index: 999;
+      }
+      #home {
+        position: absolute;
+        text-decoration: none;
+        color: white;
+        right: 5%;
+        top: 30%;
+      }
+    #kembali {
+        position: absolute;
+        top:1%;
+        left:3%;
+        /*width: 20%;
+        height: 5%;
+        border: 1px solid #ccc;
+        border-radius: 5px;*/
+        text-decoration: none;
+        cursor: pointer;
+        /* display: none; */
+      /*  background: #082988;*/
+      }
+      #kembalitext {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        color: white;
+        font-size:80%
+      }
+    .container1 {
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        background-image: radial-gradient(white, skyblue);
+        left: 10%;
+    }
+    .controls {
+        display: inline-block;
+    }
+    #dtf {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        top: 100px;
+        right: 70%;
+        background-color:blue;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #dtftext{
+        position: absolute;
+        top: -50%;
+        left: 35%;
+        color: aliceblue;
+    }
+    #a3 {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        top: 100px;
+        right: 55%;
+        background-color:blue;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #a3text{
+        position: absolute;
+        top: -50%;
+        left: 40%;
+        color: aliceblue;
+    }
+    #a4 {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        top: 100px;
+        right: 40%;
+        background-color:blue;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #a4text{
+        position: absolute;
+        top: -50%;
+        left: 40%;
+        color: aliceblue;
+    }
+    #a5 {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        top: 100px;
+        right: 25%;
+        background-color:blue;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #a5text{
+        position: absolute;
+        top: -50%;
+        left: 40%;
+        color: aliceblue;
+    }
+    #a6 {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        top: 100px;
+        right: 10%;
+        background-color:blue;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #a6text{
+        position: absolute;
+        top: -50%;
+        left: 40%;
+        color: aliceblue;
+    }
+    .inputImg {
+        display: none;
+    }
+    .font {
+        position: absolute;
+        right: 2%;
+        top: 180px;
+    }
+    .height {
+        position: absolute;
+        width: 50px;
+        right: 45%;
+        top: 170px;
+    }
+    .width {
+        position: absolute;
+        width: 50px;
+        right: 75%;
+        top: 170px;
+    }
+    .ratio {
+        position: absolute;
+        right: 18%;
+        top: 190px;
+    }
+    .color {
+        position: absolute;
+        left: 2%;
+        top: 180px;
+    }
+    .judul {
+        position: absolute;
+        right: 290px;
+        top: 210px;
+    }
+    
+    
+    .container2 {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        top: 0%;
+        background-color: #0e68f8;
+        left: 0%;
+    }
+    .wraper {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        top: 50px;
+        left: 0%;
+        /* background-color: red; */
+    }
+    .input {
+        position: absolute;
+        left: 1%;
+        top: 10%;
+        width: 95%;
+        height: 30px;
+        /* left: 10%; */
+        background-color: blue;
+        border-radius: 5%;
+        cursor: pointer;
+    }
+    .uploadtext{
+        position: absolute;
+        top: -25%;
+        left: 5%;
+        color: white;
+    }
+    .save {
+        position: absolute;
+        left: 1%;
+        top: 60%;
+        width: 95%;
+        height: 30px;
+        /* right: 10%; */
+        background-color: blue;
+        border-radius: 5%;
+        cursor: pointer;
+    }
+    .savetext{
+        position: absolute;
+        top: -25%;
+        left: 5%;
+        color: white;
+    }
+    .square {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 20%;
+        left: 35%;
+        cursor: pointer;
+        background-color: antiquewhite;
+    }
+    .circle {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        top: 35%;
+        left: 30%;
+        cursor: pointer;
+        background-color: antiquewhite;
+    }
+    .text {
+        position: absolute;
+        top: 45%;
+        left: 20%;
+        cursor: pointer;
+        color: antiquewhite;
+    }
+    .pencil {
+        position: absolute;
+        top: 65%;
+        left: 35%;
+        cursor: pointer;
+    } 
+}
+
+
+
+@media screen and (max-width: 760px) {
+    .navbar {
+        height:30px;
+        position: absolute;
+        /* display: none; */
+      }
+      #home {
+        position: absolute;
+        text-decoration: none;
+        color: white;
+        right: 5%;
+        top: 30%;
+        font-size :80%;
+      }
+      #kembali {
+        position: absolute;
+        top:1%;
+        left:3%;
+        /*width: 20%;
+        height: 5%;
+        border: 1px solid #ccc;
+        border-radius: 5px;*/
+        text-decoration: none;
+        cursor: pointer;
+        /* display: none; */
+      /*  background: #082988;*/
+      }
+      #kembalitext {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        color: white;
+        font-size:80%
+      }
+    .container1 {
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        background-image: radial-gradient(white, skyblue);
+        right:0%;
+    }
+    .controls {
+        display: inline-block;
+    }
+    #dtf {
+        position: absolute;
+        width: 60px;
+        height: 30px;
+        top: 40px;
+        right: 75%;
+        background-color:blue;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #dtftext{
+        position: absolute;
+        top: -50%;
+        left: 20%;
+        color: aliceblue;
+    }
+    #a3 {
+        position: absolute;
+        width: 50px;
+        height: 30px;
+        top: 40px;
+        right: 58%;
+        background-color:blue;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #a3text{
+        position: absolute;
+        top: -50%;
+        left: 30%;
+        color: aliceblue;
+    }
+    #a4 {
+        position: absolute;
+        width: 50px;
+        height: 30px;
+        top: 40px;
+        right: 40%;
+        background-color:blue;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #a4text{
+        position: absolute;
+        top: -50%;
+        left: 30%;
+        color: aliceblue;
+    }
+    #a5 {
+        position: absolute;
+        width: 50px;
+        height: 30px;
+        top: 40px;
+        right: 22%;
+        background-color:blue;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #a5text{
+        position: absolute;
+        top: -50%;
+        left: 30%;
+        color: aliceblue;
+    }
+    #a6 {
+        position: absolute;
+        width: 50px;
+        height: 30px;
+        top: 40px;
+        right: 5%;
+        background-color:blue;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #a6text{
+        position: absolute;
+        top: -50%;
+        left: 30%;
+        color: aliceblue;
+    }
+    .inputImg {
+        display: none;
+    }
+    /* .row {
+        margin: 1%;
+        display: flex;
+        justify-content: space-between;
+        background-color: red;
+    } */
+    .font {
+        position: absolute;
+        right: 2%;
+        top: 90px;
+    }
+    .height {
+        position: absolute;
+        width: 10px;
+        right: 65%;
+        top: 120px;
+    }
+    #tinggi {
+     width: 50px;
+    }
+    .width {
+        position: absolute;
+        width: 10px;
+        right: 85%;
+        top: 120px;
+    }
+    #lebar {
+        width: 50px;
+       }
+    .ratio {
+        position: absolute;
+        right: 30%;
+        top: 140px;
+    }
+    .color {
+        position: absolute;
+        left: 10%;
+        top: 70px;
+    }
+    .judul {
+        position: absolute;
+        right: 90px;
+        top: 145px;
+    }
+    
+    
+    .container2 {
+        position: absolute;
+        width: 15%;
+        height: 100%;
+        top: 0%;
+        background-color: #0e68f8;
+        left: 0%;
+    }
+    .wraper {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        top: 50px;
+        left: 0%;
+        /* background-color: red; */
+    }
+    .input {
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        width: 90%;
+        height: 30px;
+        /* left: 10%; */
+        background-color: blue;
+        border-radius: 5%;
+        cursor: pointer;
+    }
+    .uploadtext{
+        position: absolute;
+        top: 0%;
+        left: 5%;
+        color: white;
+        font-size: x-small;
+    }
+    .save {
+        position: absolute;
+        left: 5%;
+        top: 60%;
+        width: 90%;
+        height: 30px;
+        /* right: 10%; */
+        background-color: blue;
+        border-radius: 5%;
+        cursor: pointer;
+    }
+    .savetext{
+        position: absolute;
+        top: 0%;
+        left: 5%;
+        color: white;
+        font-size: x-small;
+    }
+    .square {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 20%;
+        left: 25%;
+        cursor: pointer;
+        background-color: antiquewhite;
+    }
+    .circle {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        top: 35%;
+        left: 20%;
+        cursor: pointer;
+        background-color: antiquewhite;
+    }
+    .text {
+        position: absolute;
+        top: 45%;
+        left: 10%;
+        cursor: pointer;
+        color: antiquewhite;
+    }
+    .pencil {
+        position: absolute;
+        top: 65%;
+        left: 35%;
+        cursor: pointer;
+    } 
+}

@@ -1,3 +1,22 @@
+const kotak = document.querySelector('.square');
+kotak.onclick =() => {
+	$('#warna').show();
+  createRect(canvas);
+};
+
+const circle = document.querySelector('.circle');
+circle.onclick =() => {
+	$('#warna').show();
+  createCirc(canvas);
+};
+
+const text = document.querySelector('.text');
+text.onclick =() => {
+	$('#warna').show();
+  $('.font').show();
+  AddText(canvas);
+};
+
 const upload = document.querySelector('.input');
 const inputImg = document.querySelector('.inputImg');
 upload.onclick =() => {

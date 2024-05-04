@@ -138,6 +138,7 @@ body {
     position: absolute;
     right: 10%;
     top: 135px;
+    display: none;
 }
 .height {
     position: absolute;
@@ -148,16 +149,19 @@ body {
     position: absolute;
     right: 58%;
     top: 135px;
+    display: none;
 }
 .ratio {
     position: absolute;
     right: 30%;
     top: 135px;
+    display: none;
 }
 .color {
     position: absolute;
     right: 80%;
     top: 135px;
+    display: none;
 }
 .judul {
     position: absolute;

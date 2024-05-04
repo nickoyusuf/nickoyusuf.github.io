@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DTF</title>
-    <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" href="index.css">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script> 
     <style>
         #dtf{
             background-color: yellowgreen;
@@ -92,7 +94,7 @@
   </a>
         <br>
     
-          <div class="color">
+          <div class="color"  id="warna">
               <label for="">Warna: </label>
               <input type="color" value="#752BFF" id="color">
           </div>
@@ -135,9 +137,9 @@
         <p class="uploadtext">UPLOAD</p>
         <input class="inputImg" id="myImg" type="file" accept="image/*">
     </div>
-    <div class="square" onclick="createRect(canvas)"></div>
-    <div class="circle" onclick="createCirc(canvas)"></div>
-    <div class="text" onclick="AddText(canvas)"><h3>Text</h3></div>
+        <div class="square"></div>
+        <div class="circle"></div>
+        <div class="text"><h3>Text</h3></div>
     <!-- <div class="pencil"><img src="img/pencil.png" alt="" width="35px"></div> -->
     <div class="save" id="download">
         <p class="savetext">SIMPAN</p>

@@ -34,8 +34,8 @@
         @media screen and (max-width: 1200px) {
           .canvascontainer {
             position: absolute;
-            top: 250px;
-            left: 30px;
+            left: -480px;
+            top: -800px;
             /* background-color: blueviolet; */
            }
            #canvas {
@@ -46,9 +46,9 @@
         @media screen and (max-width: 760px) {
         .canvascontainer {
             position: absolute;
-            left: 90px;
-            top: 480px;
-            zoom: 40%;
+            left: -645px;
+            top: -973px;
+            transform: scale(0.185);
             /* background-color: blueviolet; */
            }
       }
@@ -156,45 +156,6 @@
         height: fabric.util.parseUnit('42cm'),
 });
 </script> -->
-<script>
-var canvas2 = document.querySelector(".cvs");
-var ctx2 = canvas2.getContext("2d");
 
-var bobRoss = new Image();
-bobRoss.src = '';
-
-bobRoss.onload = function() {
-  ctx2.drawImage(bobRoss, 10, 10, bobRoss.width, bobRoss.height);
-}
-
-fullscreenify(canvas2);
-
-function fullscreenify(canvas2) {
-  window.addEventListener('resize', function() {
-    resize(canvas2);
-  }, false);
-  resize(canvas2);
-}
-
-function resize(canvas2) {
-  var scale = {
-    x: 1,
-    y: 1
-  };
-  var style;
-  scale.x = (window.innerWidth - 45) / canvas2.width;
-  scale.y = (window.innerHeight - 45) / canvas2.height;
-
-  if (scale.x > 1) {
-    scale = '1, 1';
-  } else if (scale.x < scale.y) {
-    scale = scale.x + ', ' + scale.x;
-  } else {
-    scale = scale.y + ', ' + scale.y;
-  }
-
-  canvas2.setAttribute('style', style + ' ' + '-ms-transform-origin: left top; -webkit-transform-origin: left top; -moz-transform-origin: left top; -o-transform-origin: left top; transform-origin: left top; -ms-transform: scale(' + scale + '); -webkit-transform: scale3d(' + scale + ', 1); -moz-transform: scale(' + scale + '); -o-transform: scale(' + scale + '); transform: scale(' + scale + ');');
-}
-</script>
 </body>
 </html>

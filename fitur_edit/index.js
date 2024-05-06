@@ -111,7 +111,7 @@ function loadAndUse(font) {
 
 document
 .getElementById('color')
-  .addEventListener('change', e => {
+  .addEventListener('input', e => {
     const o = canvas.getActiveObject();
     if (o) {
       o.set({ fill: e.target.value });

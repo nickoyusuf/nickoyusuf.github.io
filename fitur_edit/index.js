@@ -1,12 +1,14 @@
 const kotak = document.querySelector('.square');
 kotak.onclick =() => {
 	$('#warna').show();
+  $('.border').show();
   createRect(canvas);
 };
 
 const circle = document.querySelector('.circle');
 circle.onclick =() => {
 	$('#warna').show();
+  $('.border').show();
   createCirc(canvas);
 };
 
@@ -14,6 +16,7 @@ const text = document.querySelector('.text');
 text.onclick =() => {
 	$('#warna').show();
   $('.font').show();
+  $('.border').show();
   AddText(canvas);
 };
 
@@ -39,6 +42,8 @@ const createRect = (canvas) => {
       width: 100,
       height: 100,
       fill: '#752BFF',
+      stroke: '#000',
+      strokeWidth: 1
   })
   canvas.add(rect)
   canvas.setActiveObject(rect);
@@ -48,6 +53,8 @@ const createCirc = (canvas) => {
   const circle = new fabric.Circle({
       radius: 50,
       fill: '#752BFF',
+      stroke: '#000',
+      strokeWidth: 1
   })
   canvas.add(circle);
   canvas.setActiveObject(circle);
@@ -68,7 +75,9 @@ const AddText = (canvas) => {
     top: 50,
     width: 150,
     fill: '#752BFF',
-    fontSize: 20
+    fontSize: 20,
+    stroke: '#000',
+    strokeWidth: 1
   });
 
   canvas.add(textbox);
@@ -118,6 +127,39 @@ document
       canvas.requestRenderAll();
     }
   });
+
+  canvas.on('object:scaling', (e) => {
+    var o = e.target;
+    if (!o.strokeWidthUnscaled && o.strokeWidth) {
+      o.strokeWidthUnscaled = o.strokeWidth;
+    }
+    if (o.strokeWidthUnscaled) {
+      //o.strokeWidth = o.strokeWidthUnscaled / o.scaleX;
+    }
+  });
+  
+  $('#border-width').change(function() {
+    var cur_value = parseInt($(this).val());
+    var activeObj = canvas.getActiveObject();
+    if (activeObj == undefined) {
+      alert('klik pada salah satu Object');
+      return false;
+    }
+    activeObj.set({
+      strokeWidth: cur_value
+    });
+    canvas.renderAll();
+  });
+
+  document
+  .getElementById('border-color')
+    .addEventListener('input', e => {
+      const o = canvas.getActiveObject();
+      if (o) {
+        o.set({ stroke: e.target.value });
+        canvas.requestRenderAll();
+      }
+    });
 // const draw = document.getElementsByClassName('.pencil');
 // draw.onclick = () => {
 //   canvas.isDrawingMode;
@@ -342,7 +384,12 @@ reader.addEventListener("load", () => {
     ctx.drawImage(activeImage, 0, 0, Math.floor(width), Math.floor(height));
   }
 
-
+// function setObjectCoords(){
+//   canvas.forEachObject(function(object){
+//     object.setCoords();
+//   })
+// } 
+//canvas.setCoords();
 const ctx = canvas.getContext('2d');
 const download = document.getElementById('download');
 download.onclick =() => {

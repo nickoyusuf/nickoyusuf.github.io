@@ -166,6 +166,16 @@ body {
     top: 135px;
     display: none;
 }
+.border {
+    position: absolute;
+    /* width: 250px;
+    height: 20px;
+    border: 1px solid black;
+    padding: 1%; */
+    right: 50%;
+    top: 135px;
+    display: none;
+}
 .judul {
     position: absolute;
     /* right: 550px; */
@@ -420,6 +430,16 @@ body {
         position: absolute;
         left: 2%;
         top: 180px;
+    }
+    .border {
+        position: absolute;
+        /* width: 250px;
+        height: 20px;
+        border: 1px solid black;
+        padding: 1%; */
+        right: 38%;
+        top: 180px;
+        display: none;
     }
     .judul {
         position: absolute;
@@ -685,6 +705,16 @@ body {
         position: absolute;
         left: 10%;
         top: 70px;
+    }
+    .border {
+        position: absolute;
+        /* width: 250px;
+        height: 20px;
+        border: 1px solid black;
+        padding: 1%; */
+        right: 10%;
+        top: 120px;
+        display: none;
     }
     .judul {
         position: absolute;

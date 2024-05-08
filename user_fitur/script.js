@@ -1187,7 +1187,7 @@ save.addEventListener('click',()=> {
 	domtoimage.toPng(gambar).then((data)=>{
 		var link = document.createElement('a');
 		//link.style.width = '200%';
-		link.style.scale = 2;
+		gambar.style.scale = 2;
 		link.download = 'aplikasisablon.png';
 		link.href = data;
 		link.click();

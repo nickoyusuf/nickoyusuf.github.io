@@ -1182,11 +1182,12 @@ save.addEventListener('click',()=> {
     // gambar.style.height = '164%';
 	// gambar.naturalWidth = '500px';
     // gambar.naturalHeight = '600px';
-	gambar.clientWidth;
-	gambar.clientHeight;
+	// gambar.clientWidth;
+	// gambar.clientHeight;
 	domtoimage.toPng(gambar).then((data)=>{
 		var link = document.createElement('a');
 		//link.style.width = '200%';
+		link.style.scale = 2;
 		link.download = 'aplikasisablon.png';
 		link.href = data;
 		link.click();

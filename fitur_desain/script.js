@@ -217,7 +217,7 @@ button5.onclick =() => {
 	    draggableElem.style.border = 'none';
     	//window.print();
  	//alert("anda belum mendaftar atau login silahkan untuk daftar atau login dahulu!!");
-	 alert("download berhasil.. silahkan cek galeri atau file manager");
+	//  alert("download berhasil.. silahkan cek galeri atau file manager");
  }
 }
 
@@ -982,24 +982,20 @@ draggableElemdesain.onclick =() => {
 //   });
 // });
 
+
 var gambar = document.getElementsByClassName('contenerkaos')[0];
 var save = document.getElementById('download');
 // gambar.naturalWidth;
 // gambar.naturalHeight;
 save.addEventListener('click',()=> {
-	// gambar.style.width = '190%';
-    // gambar.style.height = '164%';
-	// gambar.naturalWidth = '500px';
-    // gambar.naturalHeight = '600px';
-	gambar.clientWidth;
-	gambar.clientHeight;
-	domtoimage.toPng(gambar).then((data)=>{
-		var link = document.createElement('a');
-		//link.style.width = '200%';
-		link.download = 'aplikasisablon.png';
-		link.href = data;
-		link.click();
-	});
+	if (confirm('apakah kamu ingin simpan?')) {
+		domtoimage.toPng(gambar).then((data)=>{
+			var link = document.createElement('a');
+			link.download = 'aplikasisablon.png';
+			link.href = data;
+			link.click();
+		});
+	  };	
 });
 // function autoClick(){
 //         $("#save").click();

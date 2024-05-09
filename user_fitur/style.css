@@ -3465,9 +3465,9 @@ body {
 }
 #ordertext {
   position: absolute;
-  left: 15%;
+  left: 1%;
   top: 15%;
-/*  font-weight: 5%;*/
+  font-size: 2rem;
 }
 
 #riset {
@@ -3569,7 +3569,8 @@ body {
 #upload {
   position: absolute;
   top: 10%;
-  left: 10%;
+  left: 5%;
+  font-size: 2rem;
 }
 .wraper_kaos .button2{
   position: absolute;
@@ -3586,7 +3587,8 @@ body {
 #upload2 {
   position: absolute;
   top: 10%;
-  left: 10%;
+  left: 5%;
+  font-size: 2rem;
 } 
 .wraper_kaos .button3{
   position: absolute;
@@ -3603,7 +3605,8 @@ body {
 #upload3 {
   position: absolute;
   top: 10%;
-  left: 10%;
+  left: 5%;
+  font-size: 2rem;
 } 
 .wraper_kaos .button4{
   position: absolute;
@@ -3620,7 +3623,8 @@ body {
 #upload4 {
   position: absolute;
   top: 10%;
- left: 10%;
+  left: 5%;
+  font-size: 2rem;
 } 
 .wraper_kaos .button5{
   position: absolute;
@@ -3637,7 +3641,8 @@ body {
 #upload5 {
  position: absolute;
  top: 10%;
- left: 10%;
+ left: 5%;
+ font-size: 2rem;
 }
 .wraper_kaos .button6{
   position: absolute;
@@ -3654,7 +3659,8 @@ body {
 #upload6 {
  position: absolute;
  top: 10%;
- left: 10%;
+ left: 5%;
+ font-size: 2rem;
 }
 .wraper_kaos .button7{
   position: absolute;
@@ -3671,12 +3677,14 @@ body {
 #upload7 {
  position: absolute;
  top: 10%;
- left: 10%;
+ left: 5%;
+ font-size: 2rem;
 }
   #downloadtext {
   position: absolute;
   top: 10%;
-  left: 15%;
+  left: 8%;
+  font-size: 2rem;
 }
 
   #contenerukuran {
@@ -3847,6 +3855,9 @@ body {
   border: 1px solid #ccc;
   background-color: white;
   font-size: 50%;
+}
+.name {
+  font-size: 2rem;
 }
 #kembali {
   position: absolute;

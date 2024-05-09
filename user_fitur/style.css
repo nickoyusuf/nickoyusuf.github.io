@@ -3374,31 +3374,36 @@ body {
 
 
 
-.contener_wraper .wraper_kaos{
+/* .contener_wraper .wraper_kaos{
     top: 0%;
     width: 100%;
     height: 55%;
     margin: 0 0 0px;
     display: flex;
     justify-content: center;
-  }
-/* .contener_wraper .wraper_kaos{
+  } */
+.contener_wraper .wraper_kaos{
     top: -27%;
     left: -50%;
     width: 200%;
     height: 110%;
     margin: 0 0 0px;
     transform: scale(0.5);
-  } */
-  .wraper_kaos .contenerkaos {
+  }
+  /* .wraper_kaos .contenerkaos {
     position: absolute;
     width: 200%;
     height: 160%;
     top: -40%;
     left: -50%;
-    /* transform: scale(0.5); */
+    transform: scale(0.5);
     display: flex;
     justify-content: center;
+  } */
+  .wraper_kaos .contenerkaos {
+    position: absolute;
+    height: 80%;
+    top: 0.5%;
   }
   /*#overflow {
   width: 56%;

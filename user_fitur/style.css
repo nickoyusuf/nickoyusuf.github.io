@@ -3396,7 +3396,7 @@ body {
     height: 160%;
     top: -40%;
     left: -50%;
-    transform: scale(0.5);
+    /* transform: scale(0.5); */
     display: flex;
     justify-content: center;
   }

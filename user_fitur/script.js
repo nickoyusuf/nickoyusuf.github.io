@@ -220,15 +220,15 @@ button7.onclick =() => {
 	button7.style.display = 'none';
 	//$('.loader').show();
     templet.style.display = 'none';
-    $('#order').show();
-	$('#download').show();
+    //$('#order').show();
+	//$('#download').show();
    document.getElementById("download").onclick = function(){
         //body.style.background = '#2576f7';
         // $('.navbar').hide();
     	//  $('.contener_wraper').hide();
-    	$('#save').show();
-    	$('#kembali2').show();
-        $('#kembali').hide();
+    	//$('#save').show();
+    	//$('#kembali2').show();
+        //$('#kembali').hide();
 		draggableElem7.style.border = 'none';
 		draggableElem6.style.border = 'none';
         draggableElem5.style.border = 'none';

@@ -758,7 +758,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   background: green;
-  display:none; 
+  /* display:none;  */
 }
 #ordertext {
   position: absolute;
@@ -804,7 +804,7 @@ body {
   text-decoration: none;
   background-color: #082988;
   cursor: pointer;
-  display:none;
+  /* display:none; */
 }
 #back {
   position: absolute;
@@ -2119,7 +2119,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   background: green;
-  display:none; 
+  /* display:none;  */
 }
 #ordertext {
   position: absolute;
@@ -2168,7 +2168,7 @@ body {
   text-decoration: none;
   background-color: #082988;
   cursor: pointer;
-  display:none;
+  /* display:none; */
 }
 #back {
   position: absolute;
